@@ -36,6 +36,7 @@ section {
 }
 
 /* Tabbed Images Compartment */
+
 .tabimg {
     background-color: var(--tint);
     padding: 50px;
@@ -74,6 +75,7 @@ section {
 }
 
 /* Facts compartment */
+
 .facts {
     text-align: center;
 }
@@ -96,6 +98,7 @@ section {
 }
 
 /* Sign Up COmpartment */
+
 .signup {
     background-color: var(--tint);
     padding: 50px;
@@ -133,6 +136,7 @@ section {
 }
 
 /* Testimonies compartment */
+
 .testimonies {
     text-align: center;
 }
@@ -149,6 +153,7 @@ section {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    padding-top: 20px;
 }
 
 .person-img {
@@ -160,4 +165,18 @@ section {
 .selected {
     border-top: 5px solid var(--primary);
     background-color: var(--tint);
+}
+
+/* Sign Off */
+
+.signoff {
+    text-align: center;
+    background-color: var(--primary);
+    border-radius: 20px;
+    padding: 50px;
+    margin-top: 100px;
+}
+
+.signoff p {
+    font-size: smaller;
 }
