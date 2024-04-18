@@ -68,3 +68,52 @@ header {
 .about-figcap {
   text-align: left;
 }
+
+.contact {
+  display: flex;
+  gap: 5%;
+    background-color: var(--tint);
+    padding: 50px;
+}
+
+.contact-map-add {
+  flex-grow: 1;
+}
+
+.contact-map {
+  flex: 1;
+  flex-basis 50%;
+  width: auto;
+  height: auto;
+  max-width: auto;
+  max-height: 300px;
+  border-radius: 10%;
+}
+.contact-form{
+  flex-grow: 1;
+}
+
+.contact-address-div,p{
+  padding: 0;
+  margin: 0;
+  line-height: 1.5rem;
+}
+
+    form {
+      width: 100%; 
+      margin: 0 auto; 
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%; 
+      padding: 0.5rem; 
+      margin-bottom: 2rem; 
+      box-sizing: border-box; 
+    }
+    input[type="submit"] {
+      
+      padding: 10px; 
+      box-sizing: border-box; 
+    }
