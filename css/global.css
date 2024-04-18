@@ -1,3 +1,6 @@
+@import url("index.css");
+
+
 :root {
     --footer-background: #1D2830;
     --header-background: #FBFAFE;
@@ -6,3 +9,4 @@
     --tint: #f6f3fc;
     --primary: #FFE135;
 }
+
