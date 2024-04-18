@@ -1,4 +1,9 @@
 
+:root{
+    --product-box-width:25vw;
+
+}
+
 .filter {
     display: flex;
     align-items: center;
@@ -9,8 +14,8 @@
     width:35vw;
 }
 .product img{
-    height: 40vh;
-    width: 40vh;
+    height: var(--product-box-width);
+    width: var(--product-box-width);
     padding:20px;
     border-radius:10%;
 }
@@ -33,11 +38,14 @@
     padding:20px;
     align-items: center;
     max-width:min-content;
+    border-radius: 10%;
 }
 
 .product-item:hover{
     background-image: url(/images/bananabackgroundhover.jpg);
-    
+    .product-item-info{
+        background-color: white;
+    }
 }
 
 .product-item-description{
@@ -56,6 +64,9 @@
 .product-item-info{
     display:block;
     flex-direction: row;
+    width: var(--product-box-width);
+    padding:10px;
+    border-radius: 10%;
 }
 
 .product-item-info p{
