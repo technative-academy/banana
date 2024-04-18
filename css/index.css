@@ -76,3 +76,26 @@ section {
 .not-highlighted {
     border-top: 1px solid rgb(196, 192, 192);
 }
+
+/* Facts compartment */
+.facts {
+    text-align: center;
+}
+
+.facts-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 1024px){
+    .fact {
+        flex-basis: 33%;
+    }
+}
+
+
+.fact-img {
+    height: 50px;
+}
