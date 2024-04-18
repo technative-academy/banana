@@ -12,6 +12,7 @@
     height: 40vh;
     width: 40vh;
     padding:20px;
+    border-radius:10%;
 }
 
 .product{
@@ -23,10 +24,65 @@
 
 }
 
+
 .product-item{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
     flex-direction:column;
     padding:20px;
+
+    align-items: center;
+    max-width:min-content;
+    transition:all 1s;
+}
+
+.product-item:before{
+    transform: translateX(-100%);
+}
+
+.product-item:hover:before{
+    transform:translateX(0);
+}
+
+.product-item:hover{
+    background-image: url(/images/bananabackgroundhover.jpg);
+    
+}
+
+.product-item-description{
+    color:gray;
+    font-style: italic;
+}
+
+.product-item .checked{
+    color:orange;
+}
+
+.product-item-info{
+    display:block;
+    flex-direction: row;
+}
+
+.product-item-info p{
+    word-break: break-all;
+    white-space: normal;
+}
+
+.product-showmore{
+    display:flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.showmore-button{
+    background-color: blue;
+    width:30vw;
+    height:5vw;
+}
+
+.showmore-button a{
+    color:var(--text-body);
+    text-decoration: none;
+    font-size: large;
 }
