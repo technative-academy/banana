@@ -76,3 +76,9 @@ section {
 .not-highlighted {
     border-top: 1px solid rgb(196, 192, 192);
 }
+
+/* Facts compartment */
+
+.fact-img {
+    height: 300px;
+}
