@@ -43,6 +43,8 @@ header {
 
 .about-text {
   justify-items: center;
+  flex: 1;
+  flex-basis: 50%;
 }
 
 .about-blurb-container {
@@ -53,9 +55,14 @@ header {
 }
 
 .aboutimg-img {
+  flex: 1;
+  flex-basis 50%;
   width: auto;
+  height: auto;
+  max-width: auto;
   max-height: 300px;
   border-radius: 10%;
+
 }
 
 .about-figcap {
