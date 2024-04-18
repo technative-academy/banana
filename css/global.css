@@ -19,10 +19,12 @@ header {
 }
 
 .header-logo {
+  flex: 1;
   margin: 0 auto;
   padding-top: 0.5rem;
-  height: 4rem;
-  width: auto;
+
+  max-width: 100%;
+  max-height: auto;
 }
 
 .header-nav {
