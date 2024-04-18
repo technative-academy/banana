@@ -1,3 +1,17 @@
+:root {
+    --footer-background: #1d2830;
+    --header-background: #fbfafe;
+    --text-body: #4e5a65;
+    --text-heading: #35414b;
+    --tint: #f6f3fc;
+    --primary: #ffe135;
+}
+
+section {
+    margin: 20px 0px;
+}
+
+/* Socials compartment */
 
 .socials {
     text-align: center;
@@ -23,5 +37,42 @@
 }
 
 .socials-img-aldi {
-    width:40px;
+    width: 40px;
+}
+
+/* Tabbed Images Compartment */
+.tabimg {
+    background-color: var(--tint);
+    padding: 50px;
+}
+
+.tabimg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.tabimg-img-container {
+    text-align: center;
+}
+
+.tabimg-img {
+    max-height: 300px;
+    border-radius: 10%;
+}
+
+.tab {
+    padding: 5px 10px;
+    width: 500px;
+    margin: 10px;
+}
+
+.highlighted {
+    border-left: 10px solid var(--primary);
+    background-color: #e9e6f0c5;
+}
+
+.not-highlighted {
+    border-top: 1px solid rgb(196, 192, 192);
 }
