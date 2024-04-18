@@ -161,3 +161,17 @@ section {
     border-top: 5px solid var(--primary);
     background-color: var(--tint);
 }
+
+/* Sign Off */
+
+.signoff {
+    text-align: center;
+    background-color: var(--primary);
+    border-radius: 20px;
+    padding: 50px;
+    margin-top: 100px;
+}
+
+.signoff p {
+    font-size: smaller;
+}
