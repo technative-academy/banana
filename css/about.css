@@ -1,0 +1,63 @@
+/* Header styling */
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-logo {
+  margin: 0 auto;
+  padding-top: 0.5rem;
+  height: 4rem;
+  width: auto;
+}
+
+.header-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav ul {
+  padding: 0;
+}
+
+.header-nav li {
+  display: inline-block;
+  margin: 0;
+  width: auto;
+  padding: 0 2rem 0 2rem;
+}
+
+.header-nav li a {
+  text-decoration: none;
+}
+
+/* About Body Styling*/
+
+.about-hero {
+  text-align: center;
+}
+
+.about-text {
+  justify-items: center;
+}
+
+.about-blurb-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+.aboutimg-img {
+  width: auto;
+  max-height: 300px;
+  border-radius: 10%;
+}
+
+.about-figcap {
+  text-align: left;
+}
