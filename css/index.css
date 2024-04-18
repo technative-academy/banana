@@ -78,7 +78,24 @@ section {
 }
 
 /* Facts compartment */
+.facts {
+    text-align: center;
+}
+
+.facts-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 1024px){
+    .fact {
+        flex-basis: 33%;
+    }
+}
+
 
 .fact-img {
-    height: 300px;
+    height: 50px;
 }
