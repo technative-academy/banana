@@ -31,18 +31,8 @@
     flex-wrap: wrap;
     flex-direction:column;
     padding:20px;
-
     align-items: center;
     max-width:min-content;
-    transition:all 1s;
-}
-
-.product-item:before{
-    transform: translateX(-100%);
-}
-
-.product-item:hover:before{
-    transform:translateX(0);
 }
 
 .product-item:hover{
@@ -57,6 +47,10 @@
 
 .product-item .checked{
     color:orange;
+}
+
+.fa-star{
+    color:gray;
 }
 
 .product-item-info{
