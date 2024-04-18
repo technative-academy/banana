@@ -1,6 +1,6 @@
 
 :root{
-    --product-box-width:25vw;
+    --product-box-width:300px;
 
 }
 
@@ -14,6 +14,7 @@
     width:35vw;
 }
 .product img{
+
     height: var(--product-box-width);
     width: var(--product-box-width);
     padding:20px;
