@@ -47,6 +47,7 @@
 
 .product-item:hover{
     background-image: url(/images/bananabackgroundhover.jpg);
+    transition:ease-in 200ms;
     
 }
 
