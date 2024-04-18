@@ -1,0 +1,27 @@
+
+.socials {
+    text-align: center;
+}
+
+.socials-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.socials-img {
+    width: 80px;
+    height: 26.11px;
+}
+
+.socials-img-fairtrade {
+    width: 40px;
+}
+
+.socials-img-morrisons {
+    width: 70px;
+}
+
+.socials-img-aldi {
+    width:40px;
+}

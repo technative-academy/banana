@@ -1,3 +1,4 @@
+@import url("index.css");
 @import url(products.css);
 :root {
     --footer-background: #1D2830;
@@ -7,3 +8,4 @@
     --tint: #f6f3fc;
     --primary: #FFE135;
 }
+
