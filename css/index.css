@@ -131,3 +131,33 @@ section {
     border: 1px;
     margin: 5px;
 }
+
+/* Testimonies compartment */
+.testimonies {
+    text-align: center;
+}
+
+.testimonies-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.testimonies-person {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.person-img {
+    width: 100px;
+    border-radius: 50%;
+    margin: 1%;
+}
+
+.selected {
+    border-top: 5px solid var(--primary);
+    background-color: var(--tint);
+}
