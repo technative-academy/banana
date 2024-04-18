@@ -57,7 +57,7 @@ main{
 }
 
 .product-item:hover{
-    background-image: url(/images/bananabackgroundhover.jpg);
+    background-image: url(images/bananabackgroundhover.jpg);
     .product-item-info{
         background-color: white;
     }
