@@ -1,3 +1,5 @@
+/* Header styling */
+
 header {
   display: flex;
   flex-direction: column;
@@ -31,4 +33,31 @@ header {
 
 .header-nav li a {
   text-decoration: none;
+}
+
+/* About Body Styling*/
+
+.about-hero {
+  text-align: center;
+}
+
+.about-text {
+  justify-items: center;
+}
+
+.about-blurb-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+.aboutimg-img {
+  width: auto;
+  max-height: 300px;
+  border-radius: 10%;
+}
+
+.about-figcap {
+  text-align: left;
 }
