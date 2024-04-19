@@ -1,13 +1,30 @@
-section {
-    margin: 20px 0px;
-}
-
 .credit {
     text-align: center;
 }
 
-/* Socials compartment */
+/* Hero */
+.header-container {
+    background-image: url("../images/headersplash.png");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: auto;
+    padding-bottom: 300px;
+}
 
+.hero-img-container {
+    position: relative;
+    left: 20%;
+    bottom: 15rem;
+}
+
+.hero-img {
+    max-width: 60%;
+    max-height: auto;
+    border-radius: 5rem;
+}
+
+/* Socials compartment */
 .socials {
     text-align: center;
 }
@@ -36,7 +53,6 @@ section {
 }
 
 /* Tabbed Images Compartment */
-
 .tabimg {
     background-color: var(--tint);
     padding: 50px;
@@ -75,7 +91,6 @@ section {
 }
 
 /* Facts compartment */
-
 .facts {
     text-align: center;
 }
@@ -98,7 +113,6 @@ section {
 }
 
 /* Sign Up COmpartment */
-
 .signup {
     background-color: var(--tint);
     padding: 50px;
@@ -136,7 +150,6 @@ section {
 }
 
 /* Testimonies compartment */
-
 .testimonies {
     text-align: center;
 }
@@ -168,7 +181,6 @@ section {
 }
 
 /* Sign Off */
-
 .signoff {
     text-align: center;
     background-color: var(--primary);
