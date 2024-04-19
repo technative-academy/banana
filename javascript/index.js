@@ -43,3 +43,43 @@ function showContent(event) {
             break;
     }
 }
+
+// Testimonies
+
+const testimonies = document.querySelectorAll(".testimonies-person");
+testimonies.forEach(addTestimonyListener);
+
+function addTestimonyListener(tab) {
+    tab.addEventListener("click", showQuote);
+}
+
+function showQuote(event) {
+    const quote = document.querySelector(".quote");
+    const clickedTab = event.currentTarget;
+    const tabData = clickedTab.dataset.tab;
+    console.log(tabData);
+    switch (tabData) {
+        case "bananaman":
+            quote.textContent =
+                '"The biggest, yellowist, tastiest bananas I have ever eaten. Except the red one, that one was red."';
+            testimonies.forEach((testimony) =>
+                testimony.classList.remove("selected")
+            );
+            clickedTab.classList.add("selected");
+            break;
+        case "gwen":
+            quote.textContent = '"This sh** is bananas! B-A-N-A-N-A-S!"';
+            testimonies.forEach((testimony) =>
+                testimony.classList.remove("selected")
+            );
+            clickedTab.classList.add("selected");
+            break;
+        case "gorilla":
+            quote.textContent = '"Ooh Ooh Aah Aah"';
+            testimonies.forEach((testimony) =>
+                testimony.classList.remove("selected")
+            );
+            clickedTab.classList.add("selected");
+            break;
+    }
+}
