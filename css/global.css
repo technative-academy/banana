@@ -48,32 +48,41 @@ header {
 .header-nav li a {
   text-decoration: none;
   font-size: 1.1rem;
+  font-weight: bolder;
 }
 
 header a:link,
 footer a:visited {
-  text-decoration: none; 
-  color: var(--text-heading); 
+  text-decoration: none;
+  color: var(--text-heading);
   font-weight: lighter;
 }
 
-header a:hover{
-  text-decoration: underline; 
+header a:hover {
+  text-decoration: underline;
   color: var(--text-body);
-  font-weight: bolder;
-  font-size: 1.1rem;
 }
 
-header a:active{
-  text-decoration: underline; 
-  color: var(--text-heading); 
-  font-size: 1rem;
-  }
+header a:active {
+  text-decoration: underline;
+  color: var(--text-heading);
+}
+
+.background-container {
+  background-image: url("../images/headersplash.png");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding-bottom: 4rem;
+  width: auto;
+  flex: 1;
+}
 
 /* BODY styling */
 
 body {
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -90,11 +99,12 @@ footer {
   display: flex;
   justify-content: space-between;
 
-    .footer,span {
+  .footer,
+  span {
     font-weight: bolder;
   }
 
-  .footer,p {
+  .footer > p {
     font-size: 0.8rem;
   }
 
@@ -104,122 +114,136 @@ footer {
     gap: 4rem;
   }
 
-.footer-nav-legal {
-  flex: 1;
-  margin: 0;
-  padding: 0;
-}
+  .footer-nav-legal {
+    flex: 1;
+    margin: 0;
+    padding: 0;
+  }
 
-.footer-nav-legal ul {
-  padding: 0;
-  list-style-type: none;
-}
-.footer-nav-legal li {
+  .footer-nav-legal ul {
+    padding: 0;
+    list-style-type: none;
+  }
+  .footer-nav-legal li {
     padding: 0.6rem;
-}
+  }
 
-.footer-right-container {
-  display: flex;
-  gap: 5rem;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: space-evenly;
-}
-.footer-nav-company {
-  flex: 1;
-  margin: 0;
-  padding: 0;
-}
+  .footer-right-container {
+    display: flex;
+    gap: 5rem;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+  }
+  .footer-nav-company {
+    flex: 1;
+    margin: 0;
+    padding: 0;
+  }
 
-.footer-nav-company ul {
-  padding: 0;
-  list-style-type: none;
-  text-align: left;
-}
-.footer-nav-company li {
+  .footer-nav-company ul {
+    padding: 0;
+    list-style-type: none;
+    text-align: left;
+  }
+  .footer-nav-company li {
     padding: 0.6rem;
-}
+  }
 
-.footer-nav-social {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
+  .footer-nav-social {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
 
-.footer-nav-social ul {
-  padding: 0;
-  margin: 0;
-}
+  .footer-nav-social ul {
+    padding: 0;
+    margin: 0;
+  }
 
-.footer-nav-social li {
-  display: inline-block;
-  margin: 0;
-  width: auto;
-  padding: 0 0.5rem 0 0.5rem;
-}
+  .footer-nav-social li {
+    display: inline-block;
+    margin: 0;
+    width: auto;
+    padding: 0 0.5rem 0 0.5rem;
+  }
 
-.socialsimg, img:hover {
-  height: 2rem;
-}
+  .socialsimg,
+  img:hover {
+    height: 2rem;
+  }
 
-footer,a:link,
-footer,a:visited {
-  text-decoration: none; 
-  color: var(--tint); 
-}
+  footer,
+  a:link,
+  footer,
+  a:visited {
+    text-decoration: none;
+    color: var(--tint);
+  }
 
-footer,a:hover{
-  text-decoration: underline; 
-  color: var(--primary);
-}
+  footer,
+  a:hover {
+    text-decoration: underline;
+    color: var(--primary);
+  }
 
-footer,a:active{
-   text-decoration: wavy; 
-  color: var(--primary); 
-  font-weight: bolder;
-}
+  footer,
+  a:active {
+    text-decoration: wavy;
+    color: var(--primary);
+    font-weight: bolder;
+  }
 
-.socialsimg, img{
-  width: 100%;
-  height: 1.5rem;
-  margin: 0 auto;
-}
+  .socialsimg,
+  img {
+    width: 100%;
+    height: 1.5rem;
+    margin: 0 auto;
+  }
 }
 
 /*Banana emoji on hover for clickable items*/
-button:hover{
+button:hover {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🍌</text></svg>")
-  16 0, auto;
+      16 0,
+    auto;
 }
-a:hover{
+a:hover {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🍌</text></svg>")
-  16 0, auto;
+      16 0,
+    auto;
 }
-input:hover{
+input:hover {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🍌</text></svg>")
-  16 0, auto;
-}
-
-.product-item:hover{
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🍌</text></svg>")
-  16 0, auto;
+      16 0,
+    auto;
 }
 
-.tab:hover{
+.product-item:hover {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🍌</text></svg>")
-  16 0, auto;
+      16 0,
+    auto;
+}
+
+.tab:hover {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🍌</text></svg>")
+      16 0,
+    auto;
 }
 
 .testimonies-person:hover {
-    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🍌</text></svg>")
-    16 0, auto;
-  }
-.signup-btn:hover{
-cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🍌</text></svg>")
-16 0, auto;
-  }
-
-textarea:hover{
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🍌</text></svg>")
-16 0, auto;
+      16 0,
+    auto;
+}
+.signup-btn:hover {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🍌</text></svg>")
+      16 0,
+    auto;
+}
+
+textarea:hover {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🍌</text></svg>")
+      16 0,
+    auto;
 }

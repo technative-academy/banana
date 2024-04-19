@@ -1,13 +1,3 @@
-/* Header styling */
-.background-container {
-  background-image: url("../images/headersplash.png");
-  background-size: cover;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  padding-bottom: 4rem;
-  width: auto;
-}
-
 /* About Body Styling*/
 
 .about-hero {
@@ -26,7 +16,7 @@
   padding-left: 50px;
 }
 
-.aboutimg-fig {
+.aboutimgfig {
   flex: 1;
   padding-right: 50px;
 }
@@ -46,7 +36,7 @@
   margin: 0.5rem 0 0.5rem 0;
 }
 
-.abouttext p {
+.abouttext > p {
   padding: 0.8rem 0 0.8rem 0;
 }
 
@@ -70,7 +60,7 @@
   align-self: flex-start;
 }
 
-iframe {
+.googlemap {
   max-width: 100%;
   max-height: auto;
   border-radius: 10%;
@@ -79,8 +69,7 @@ iframe {
   flex: 1;
 }
 
-.contact-address-div,
-p {
+.contact-address-div > p {
   padding: 0;
   margin: 0;
   line-height: 1.5rem;

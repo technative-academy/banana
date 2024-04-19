@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Peeling-Good</title>
+    <title>Peeling-Good | Products</title>
     <link href="css/global.css" rel="stylesheet" />
     <!-- star icon library -->
     <link
@@ -13,12 +13,11 @@
 
     <script defer src="./javascript/filter.js"></script>
     <script defer src="./javascript/loadmore.js"></script>
-
   </head>
 
   <body>
-    <div class="background-container">
-
+    <div class="bodycontainer">
+      <div class="background-container">
         <header class="header">
           <div>
             <img
@@ -34,230 +33,237 @@
               <li><a href="./about.html">About</a></li>
             </ul>
           </nav>
-      </header>
+        </header>
 
-      <div class="about-hero" id="aboutus">
-        <h1>Store</h1>
-        <p>If you're reading this, you have to buy something!</p>
+        <div class="about-hero" id="aboutus">
+          <h1>Store</h1>
+          <p>If you're reading this, you have to buy something!</p>
+        </div>
       </div>
+      <main>
+        <div class="mainflexcontainer">
+          <!-- container for main content-->
+
+          <section class="filter">
+            <!--Container for filter-->
+            <h2>Find the banana you're looking for</h2>
+            <form action="#">
+              <input
+                type="text"
+                class="search"
+                name="search "
+                placeholder="Search Products"
+              />
+            </form>
+            <p>6 items found</p>
+          </section>
+          <section class="product">
+            <!-- large container containing all products-->
+            <div class="product-item">
+              <!--Individual product container-->
+              <div class="product-item-img">
+                <!-- container for image in the product-->
+                <img src="images/michelgrosbanana.jpg" />
+              </div>
+              <div class="product-item-info">
+                <!-- Container for the name,price,rating under image-->
+                <h3>Gros Michel</h3>
+                <p class="product-item-description">
+                  One of our rarest bananas, enjoy a flavour classified as
+                  extinct
+                </p>
+                <span> Rating:</span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <p>£99.99</p>
+              </div>
+            </div>
+            <div class="product-item">
+              <!--Individual product container-->
+              <div class="product-item-img">
+                <!-- container for image in the product-->
+                <img src="images/red banana.jpg" />
+              </div>
+              <div class="product-item-info">
+                <!-- Container for the name,price,rating under image-->
+                <h3>Red</h3>
+                <p class="product-item-description">
+                  These bananas are red, are they <br />
+                  edible? Who knows...
+                </p>
+                <span> Rating:</span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <p>£29.99</p>
+              </div>
+            </div>
+            <div class="product-item">
+              <!--Individual product container-->
+              <div class="product-item-img">
+                <!-- container for image in the product-->
+                <img src="images/goldfinger banana.jpg" />
+              </div>
+              <div class="product-item-info">
+                <!-- Container for the name,price,rating under image-->
+                <h3>Goldfinger</h3>
+                <p class="product-item-description">
+                  Goldfingeeeer...Banaaaanaaas
+                </p>
+                <span> Rating:</span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <p>£49.99</p>
+              </div>
+            </div>
+            <div class="product-item">
+              <!--Individual product container-->
+              <div class="product-item-img">
+                <!-- container for image in the product-->
+                <img src="images/plantain.jpg" />
+              </div>
+              <div class="product-item-info">
+                <!-- Container for the name,price,rating under image-->
+                <h3>Plantain</h3>
+                <p class="product-item-description">
+                  Delicious plantain's, don't forget to cook!
+                </p>
+                <span> Rating:</span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <p>£9.99</p>
+              </div>
+            </div>
+            <div class="product-item">
+              <!--Individual product container-->
+              <div class="product-item-img">
+                <!-- container for image in the product-->
+                <img src="images/cavendish.jpg" />
+              </div>
+              <div class="product-item-info">
+                <!-- Container for the name,price,rating under image-->
+                <h3>Cavendish</h3>
+                <p class="product-item-description">
+                  Bog standard, basic, boring <br />
+                  banana
+                </p>
+                <span> Rating:</span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <p>£1.99</p>
+              </div>
+            </div>
+            <div class="product-item">
+              <!--Individual product container-->
+              <div class="product-item-img">
+                <!-- container for image in the product-->
+                <img src="images/pisangraja.jpg" />
+              </div>
+              <div class="product-item-info">
+                <!-- Container for the name,price,rating under image-->
+                <h3>Pisang Raja</h3>
+                <p class="product-item-description">
+                  An unsung hero, a flavour <br />sensation (might need to eat
+                  two)
+                </p>
+                <span> Rating:</span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <p>£59.99</p>
+              </div>
+            </div>
+          </section>
+          <section class="product-showmore">
+            <!--Button to show more, JS functionality ?optional-->
+            <button class="showmore-button">
+              <a href="#">Show More</a>
+            </button>
+          </section>
+        </div>
+      </main>
+      <footer>
+        <div class="footer-left-container">
+          <nav class="footer-nav-company">
+            <ul>
+              <li><span>Company</span></li>
+              <li><a href="#aboutus">About Us</a></li>
+              <li><a href="#contactus">Contact Us</a></li>
+            </ul>
+          </nav>
+          <p>© 2024 - All rights reserved.</p>
+        </div>
+        <div class="footer-right-container">
+          <nav class="footer-nav-legal">
+            <ul>
+              <li><span>Legal</span></li>
+              <li><a href="#">Cookies Policy</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+            </ul>
+          </nav>
+          <nav class="footer-nav-social">
+            <ul>
+              <li>
+                <a href="#"
+                  ><img
+                    class="socialsimg"
+                    src="./images/instagram-48.png"
+                    alt="Instagram"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    class="socialsimg"
+                    src="./images/facebook-48.png"
+                    alt="Facebook"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    class="socialsimg"
+                    src="./images/twitterx-48.png"
+                    alt="Twitter or X "
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    class="socialsimg"
+                    src="./images/youtube-48.png"
+                    alt="Youtube "
+                /></a>
+              </li>
+              <li>
+                <a href="./index.html"
+                  ><img
+                    class="socialsimg"
+                    src="./images/bananasocial-50.png"
+                    alt="Love Bananas? Click Here. "
+                /></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
     </div>
-    <main>
-      <!-- container for main content-->
-
-      <section class="filter">
-        <!--Container for filter-->
-        <h2>Find the banana you're looking for</h2>
-        <form action="#">
-          <input
-            type="text"
-            class="search"
-            name="search "
-            placeholder="Search Products"
-          />
-        </form>
-        <p>6 items found</p>
-      </section>
-      <section class="product">
-        <!-- large container containing all products-->
-        <div class="product-item">
-          <!--Individual product container-->
-          <div class="product-item-img">
-            <!-- container for image in the product-->
-            <img src="images/michelgrosbanana.jpg" />
-          </div>
-          <div class="product-item-info">
-            <!-- Container for the name,price,rating under image-->
-            <h3>Gros Michel</h3>
-            <p class="product-item-description">
-              One of our rarest bananas, enjoy a flavour classified as extinct
-            </p>
-            <span> Rating:</span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <p>£99.99</p>
-          </div>
-        </div>
-        <div class="product-item">
-          <!--Individual product container-->
-          <div class="product-item-img">
-            <!-- container for image in the product-->
-            <img src="images/red banana.jpg" />
-          </div>
-          <div class="product-item-info">
-            <!-- Container for the name,price,rating under image-->
-            <h3>Red</h3>
-            <p class="product-item-description">
-              These bananas are red, are they <br />
-              edible? Who knows...
-            </p>
-            <span> Rating:</span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <p>£29.99</p>
-          </div>
-        </div>
-        <div class="product-item">
-          <!--Individual product container-->
-          <div class="product-item-img">
-            <!-- container for image in the product-->
-            <img src="images/goldfinger banana.jpg" />
-          </div>
-          <div class="product-item-info">
-            <!-- Container for the name,price,rating under image-->
-            <h3>Goldfinger</h3>
-            <p class="product-item-description">Goldfingeeeer...Banaaaanaaas</p>
-            <span> Rating:</span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <p>£49.99</p>
-          </div>
-        </div>
-        <div class="product-item">
-          <!--Individual product container-->
-          <div class="product-item-img">
-            <!-- container for image in the product-->
-            <img src="images/plantain.jpg" />
-          </div>
-          <div class="product-item-info">
-            <!-- Container for the name,price,rating under image-->
-            <h3>Plantain</h3>
-            <p class="product-item-description">
-              Delicious plantain's, don't forget to cook!
-            </p>
-            <span> Rating:</span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <p>£9.99</p>
-          </div>
-        </div>
-        <div class="product-item">
-          <!--Individual product container-->
-          <div class="product-item-img">
-            <!-- container for image in the product-->
-            <img src="images/cavendish.jpg" />
-          </div>
-          <div class="product-item-info">
-            <!-- Container for the name,price,rating under image-->
-            <h3>Cavendish</h3>
-            <p class="product-item-description">
-              Bog standard, basic, boring <br />
-              banana
-            </p>
-            <span> Rating:</span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <p>£1.99</p>
-          </div>
-        </div>
-        <div class="product-item">
-          <!--Individual product container-->
-          <div class="product-item-img">
-            <!-- container for image in the product-->
-            <img src="images/pisangraja.jpg" />
-          </div>
-          <div class="product-item-info">
-            <!-- Container for the name,price,rating under image-->
-            <h3>Pisang Raja</h3>
-            <p class="product-item-description">
-              An unsung hero, a flavour <br />sensation (might need to eat two)
-            </p>
-            <span> Rating:</span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <p>£59.99</p>
-          </div>
-        </div>
-      </section>
-      <section class="product-showmore">
-        <!--Button to show more, JS functionality ?optional-->
-        <button class="showmore-button">
-          <a href="#">Show More</a>
-        </button>
-      </section>
-    </main>
-    <footer>
-      <div class="footer-left-container">
-        <nav class="footer-nav-company">
-          <ul>
-            <li><span>Company</span></li>
-            <li><a href="#aboutus">About Us</a></li>
-            <li><a href="#contactus">Contact Us</a></li>
-          </ul>
-        </nav>
-        <p>© 2024 - All rights reserved.</p>
-      </div>
-      <div class="footer-right-container">
-        <nav class="footer-nav-legal">
-          <ul>
-            <li><span>Legal</span></li>
-            <li><a href="#">Cookies Policy</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
-          </ul>
-        </nav>
-        <nav class="footer-nav-social">
-          <ul>
-            <li>
-              <a href="#"
-                ><img
-                  class="socialsimg"
-                  src="./images/instagram-48.png"
-                  alt="Instagram"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img
-                  class="socialsimg"
-                  src="./images/facebook-48.png"
-                  alt="Facebook"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img
-                  class="socialsimg"
-                  src="./images/twitterx-48.png"
-                  alt="Twitter or X "
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img
-                  class="socialsimg"
-                  src="./images/youtube-48.png"
-                  alt="Youtube "
-              /></a>
-            </li>
-            <li>
-              <a href="./index.html"
-                ><img
-                  class="socialsimg"
-                  src="./images/bananasocial-50.png"
-                  alt="Love Bananas? Click Here. "
-              /></a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </footer>
   </body>
 </html>

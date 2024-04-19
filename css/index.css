@@ -1,208 +1,223 @@
 .credit {
-    text-align: center;
+  text-align: center;
 }
 
 /* Hero */
 .header-container {
-    background-image: url("../images/headersplash.png");
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    width: auto;
-    padding-bottom: 300px;
+  background-image: url("../images/headersplash.png");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  width: auto;
+  padding-bottom: 300px;
 }
 
 .hero-img-container {
-    position: relative;
-    left: 20%;
-    bottom: 15rem;
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin: -15rem 0 5rem 0;
 }
 
 .hero-img {
-    max-width: 60%;
-    max-height: auto;
-    border-radius: 5rem;
+  max-width: 60%;
+  max-height: auto;
+  border-radius: 5rem;
+  flex: 1;
 }
 
 /* Socials compartment */
 .socials {
-    text-align: center;
+  text-align: center;
 }
 
 .socials-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3rem auto 5rem auto;
+  gap: 2rem;
 }
 
-.socials-img {
-    width: 80px;
-    height: 26.11px;
+.socials-img-coop {
+  width: 5rem;
+  height: auto;
+}
+
+.socials-img-tesco {
+  width: 7rem;
+  height: auto;
 }
 
 .socials-img-fairtrade {
-    width: 40px;
+  width: 5rem;
+  height: auto;
 }
 
 .socials-img-morrisons {
-    width: 70px;
+  width: 7rem;
+  height: auto;
 }
 
 .socials-img-aldi {
-    width: 40px;
+  width: 5rem;
+  height: auto;
 }
 
 /* Tabbed Images Compartment */
 .tabimg {
-    background-color: var(--tint);
-    padding: 50px;
+  background-color: var(--tint);
+  padding: 50px;
 }
 
 .tabimg-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
 }
 
 .tabimg-img-container {
-    text-align: center;
+  text-align: center;
 }
 
 .tabimg-img {
-    max-width: 40%;
-    max-height: auto;
-    border-radius: 10%;
-    flex: 1;
+  max-width: 40%;
+  max-height: auto;
+  border-radius: 10%;
+  flex: 1;
 }
 
 .tab {
-    padding: 5px 10px;
-    width: 500px;
-    margin: 10px;
-    cursor: pointer;
+  padding: 5px 10px;
+  width: 500px;
+  margin: 10px;
+  cursor: pointer;
 }
 
 .highlighted {
-    border-left: 10px solid var(--primary);
-    background-color: #e9e6f0c5;
+  border-left: 10px solid var(--primary);
+  background-color: #e9e6f0c5;
 }
 
 .not-highlighted {
-    border-top: 1px solid rgb(196, 192, 192);
+  border-top: 1px solid rgb(196, 192, 192);
 }
 
 /* Facts compartment */
 .facts {
-    text-align: center;
+  text-align: center;
 }
 
 .facts-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 @media screen and (min-width: 1024px) {
-    .fact {
-        flex-basis: 33%;
-    }
+  .fact {
+    flex-basis: 33%;
+  }
 }
 
 .fact-img {
-    /* height: 50px; */
-    max-width: 10%;
-    max-height: auto;
+  /* height: 50px; */
+  max-width: 10%;
+  max-height: auto;
 }
 
 /* Sign Up COmpartment */
 .signup {
-    background-color: var(--tint);
-    padding: 50px;
+  background-color: var(--tint);
+  padding: 50px;
 }
 
 .signup-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
 }
 
 .signup-text {
-    flex: 1;
+  flex: 1;
 }
 
 .signup-img-container {
-    flex: 1;
+  flex: 1;
 }
 
 .signup-img {
-    max-width: 100%;
-    max-height: auto;
-    /* width: 600px; */
-    border-radius: 50px;
+  max-width: 100%;
+  max-height: auto;
+  /* width: 600px; */
+  border-radius: 50px;
 }
 
 .signup-btn {
-    padding: 10px;
-    border-radius: 5px;
-    background-color: var(--primary);
-    border: 1px solid #dbbe18;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--primary);
+  border: 1px solid #dbbe18;
 }
 
 .signup-btn:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .signup-btn:active {
-    padding: 10px;
-    border-radius: 5px;
-    background-color: var(--primary);
-    border: 1px;
-    margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--primary);
+  border: 1px;
+  margin: 5px;
 }
 
 /* Testimonies compartment */
 .testimonies {
-    text-align: center;
+  text-align: center;
 }
 
 .testimonies-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .testimonies-person {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    padding-top: 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding-top: 20px;
 }
 
 .person-img {
-    width: 100px;
-    border-radius: 50%;
-    margin: 1%;
+  width: 100px;
+  border-radius: 50%;
+  margin: 1%;
 }
 
 .selected {
-    border-top: 5px solid var(--primary);
-    background-color: var(--tint);
+  border-top: 5px solid var(--primary);
+  background-color: var(--tint);
 }
 
 /* Sign Off */
 .signoff {
-    text-align: center;
-    background-color: var(--primary);
-    border-radius: 20px;
-    padding: 50px;
-    margin-top: 100px;
+  text-align: center;
+  background-color: var(--primary);
+  border-radius: 20px;
+  padding: 50px;
+  margin: 5rem auto;
+  width: 80%;
 }
 
-.signoff p {
-    font-size: smaller;
+.signoff > p {
+  font-size: smaller;
 }
