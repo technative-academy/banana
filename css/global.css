@@ -1,5 +1,6 @@
 @import url("index.css");
-@import url(products.css);
+@import url("products.css");
+@import url("about.css");
 :root {
   --footer-background: #1d2830;
   --header-background: #fbfafe;
