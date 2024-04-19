@@ -70,7 +70,7 @@
   align-self: flex-start;
 }
 
-.contact-map {
+iframe {
   max-width: 100%;
   max-height: auto;
   border-radius: 10%;
@@ -102,11 +102,11 @@ textarea {
   box-sizing: border-box;
 }
 form input[type="submit"] {
-  padding: 10px;
+  padding: 0.5rem 1rem 0.5rem 1rem;
   box-sizing: border-box;
   color: var(--text-body);
   font-weight: bolder;
   background-color: var(--primary);
-  border-radius: 5%;
-  box-shadow: none;
+  border-radius: 5px;
+  border: 1px solid #dbbe18;
 }
