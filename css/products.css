@@ -101,7 +101,7 @@ main{
 }
 
 .showmore-button{
-    background-color: blue;
+    background-color: var(--primary);
     width:30vw;
     height:5vw;
 }
@@ -110,4 +110,10 @@ main{
     color:var(--text-body);
     text-decoration: none;
     font-size: large;
+}
+
+
+/* hide selector for filter functionality */
+.hide{
+    display:none;
 }
