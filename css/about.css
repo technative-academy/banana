@@ -1,38 +1,12 @@
 /* Header styling */
-
-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.header-logo {
-  margin: 0 auto;
-  padding-top: 0.5rem;
-  height: 4rem;
+.background-container {
+  background-image: url('../images/headersplash.png');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding-bottom: 4rem;
   width: auto;
-}
 
-.header-nav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.header-nav ul {
-  padding: 0;
-}
-
-.header-nav li {
-  display: inline-block;
-  margin: 0;
-  width: auto;
-  padding: 0 2rem 0 2rem;
-}
-
-.header-nav li a {
-  text-decoration: none;
 }
 
 /* About Body Styling*/
@@ -41,79 +15,206 @@ header {
   text-align: center;
 }
 
-.about-text {
-  justify-items: center;
-  flex: 1;
-  flex-basis: 50%;
-}
-
 .about-blurb-container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5%;
 }
+.abouttext {
+  flex: 1;
+}
+
+.aboutimg-fig {
+  flex: 1;
+}
 
 .aboutimg-img {
-  flex: 1;
-  flex-basis 50%;
-  width: auto;
-  height: auto;
-  max-width: auto;
-  max-height: 300px;
   border-radius: 10%;
-
+  max-width: 100%;
+  max-height: auto;
 }
 
 .about-figcap {
-  text-align: left;
+  text-align: right;
+  font-size: 0.75rem;
 }
+
+.abouttext h3 {
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.abouttext p {
+  padding: 0.8rem 0 0.8rem 0;
+}
+
+/*CONTACT section styling*/
 
 .contact {
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   gap: 5%;
-    background-color: var(--tint);
-    padding: 50px;
+  background-color: var(--tint);
+  padding: 50px;
+  margin: 0;
 }
 
 .contact-map-add {
-  flex-grow: 1;
+  flex: 1;
+}
+.contact-form {
+  flex: 1;
+  align-self: flex-start;
 }
 
 .contact-map {
-  flex: 1;
-  flex-basis 50%;
-  width: auto;
-  height: auto;
-  max-width: auto;
-  max-height: 300px;
+  max-width: 100%;
+  max-height: auto;
   border-radius: 10%;
 }
-.contact-form{
-  flex-grow: 1;
+.contact-form {
+  flex: 1;
 }
 
-.contact-address-div,p{
+.contact-address-div,
+p {
   padding: 0;
   margin: 0;
   line-height: 1.5rem;
 }
 
-    form {
-      width: 100%; 
-      margin: 0 auto; 
-    }
-    
-    input[type="text"],
-    input[type="email"],
-    textarea {
-      width: 100%; 
-      padding: 0.5rem; 
-      margin-bottom: 2rem; 
-      box-sizing: border-box; 
-    }
-    input[type="submit"] {
-      
-      padding: 10px; 
-      box-sizing: border-box; 
-    }
+/* FORM Styling */
+
+form {
+  width: 100%;
+  margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+  box-sizing: border-box;
+}
+form input[type="submit"] {
+  padding: 10px;
+  box-sizing: border-box;
+  color: var(--text-body);
+  font-weight: bolder;
+  background-color: var(--primary);
+  border-radius: 5%;
+  box-shadow: none;
+}
+
+/* FOOTER styling */
+
+footer {
+  color: var(--tint);
+  background-color: var(--footer-background);
+  padding: 3.2rem 5rem 1.5rem 5rem;
+  display: flex;
+  justify-content: space-between;
+
+    .footer,span {
+    font-weight: bolder;
+  }
+
+  .footer,p {
+    font-size: 0.8rem;
+  }
+
+  .footer-left-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+.footer-nav-legal {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-nav-legal ul {
+  padding: 0;
+  list-style-type: none;
+}
+.footer-nav-legal li {
+    padding: 0.6rem;
+}
+
+.footer-right-container {
+  display: flex;
+  gap: 5rem;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-evenly;
+}
+.footer-nav-company {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-nav-company ul {
+  padding: 0;
+  list-style-type: none;
+  text-align: left;
+}
+.footer-nav-company li {
+    padding: 0.6rem;
+}
+
+.footer-nav-social {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-nav-social ul {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav-social li {
+  display: inline-block;
+  margin: 0;
+  width: auto;
+  padding: 0 0.5rem 0 0.5rem;
+}
+
+.socialsimg, img:hover {
+  height: 2rem;
+}
+
+footer,a:link,
+footer,a:visited {
+  text-decoration: none; 
+  color: var(--tint); 
+}
+
+footer,a:hover{
+  text-decoration: underline; 
+  color: var(--primary);
+}
+
+footer,a:active{
+   text-decoration: wavy; 
+  color: var(--primary); 
+  font-weight: bolder;
+}
+
+.socialsimg, img{
+  width: 100%;
+  height: 1.5rem;
+  margin: 0 auto;
+}
+
+
+
+
+
+
