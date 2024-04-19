@@ -59,3 +59,26 @@
 - Tired :(
 
 </details>
+
+<details>
+
+<summary>Day 2</summary>
+
+# How far we've got
+
+## GHPages as of 4:30pm 19/04/2024
+### Index
+
+Working Tabs.
+
+![alt text](readme_images/day2-index.png)
+
+### Products
+
+![alt text](readme_images/day2-about.png)
+
+### About
+
+![alt text](readme_images/day2-products.png)
+
+</details>
