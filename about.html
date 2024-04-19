@@ -9,26 +9,28 @@
   </head>
 
   <body>
-    <header class="header">
-      <div>
-        <img
-          class="header-logo"
-          src="./images/companylogo.png"
-          alt="Peeling Good"
-        />
+    <div class="background-container">
+      <header class="header">
+        <div>
+          <img
+            class="header-logo"
+            src="./images/companylogo.png"
+            alt="Peeling Good"
+          />
+        </div>
+        <nav class="header-nav">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./products.html">Products</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
+      </header>
+<section class="aboutsection">
+      <div class="about-hero" id="aboutus">
+        <h1>About us</h1>
+        <p>Possibly, nearly, almost the best banana merchants around!</p>
       </div>
-      <nav class="header-nav">
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./products.html">Products</a></li>
-          <li><a href="#">About</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <div class="about-hero">
-      <h1>About us</h1>
-      <p>Possibly, nearly, almost the best banana merchants around!</p>
     </div>
 
     <div class="about-blurb-container">
@@ -47,64 +49,154 @@
           fringilla sit amet nec felis. Aliquam eu velit bananas, fermentum leo
           ut, molestie lectus. Aenean bananas orci id orci fringilla, ac
           placerat tortor bananas. Praesent iaculis leo eu eros facilisis
-          feugiat. M
+          feugiat.
         </p>
       </section>
-      <section class="aboutimg">
-        <figure class="aboutimg-fig">
-          <img
-            class="aboutimg-img"
-            src="./images/banana_market.jpg"
-            alt="Picture of a Banana Market"
-          />
-          <figcaption class="about-figcap">
-            Photo by
-            <a
-              href="https://unsplash.com/@diegocatto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-              >Diego Catto</a
-            >
-            on
-            <a
-              href="https://unsplash.com/photos/variety-fruits-sw9V-jBBurQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-              >Unsplash</a
-            >
-          </figcaption>
-        </figure>
-      </section>
+
+      <figure class="aboutimg-fig">
+        <img
+          class="aboutimg-img"
+          src="./images/banana_market.jpg"
+          alt="Picture of a Banana Market"
+        />
+        <figcaption class="about-figcap">
+          Photo by
+          <a
+            href="https://unsplash.com/@diegocatto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            >Diego Catto</a
+          >
+          on
+          <a
+            href="https://unsplash.com/photos/variety-fruits-sw9V-jBBurQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            >Unsplash</a
+          >
+        </figcaption>
+      </figure>
     </div>
+    </section>
 
-    <section class="facts"></section>
+    <section class="contact" id="contactus">
+      <div class="contact-map-add">
+        <div id="contact-map-div">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12338.957081351464!2d-0.14333763528324092!3d50.82928199827322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1713524866729!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
 
-    <section class="signup"></section>
+        <div id="contact-address-div">
+          <h4>Our Address:</h4>
+          <p>123 Somewhere Street</p>
+          <p>Over the Rainbow</p>
+          <p>Neverland</p>
+          <p>BAN8 N8S</p>
+        </div>
+      </div>
 
-    <section class="map"></section>
+      <div class="contact-form">
+        <h2>Contact Us</h2>
 
-    <section class="contact"></section>
+        <form action="#" method="post">
+          <div>
+            <label for="name">Name:</label><br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              required
+            /><br />
+          </div>
+          <div>
+            <label for="email">Email:</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="name@youremail.com"
+              required
+            /><br />
+          </div>
+          <div>
+            <label for="message">Message:</label><br />
+            <textarea
+              id="message"
+              name="message"
+              rows="10"
+              placeholder="Enter your message here"
+              required
+            ></textarea
+            ><br />
+          </div>
+          <div>
+            <input class="contact-submit" type="submit" value="Submit" />
+          </div>
+        </form>
+      </div>
+    </section>
 
     <footer>
-      <nav class="footer-nav-legal">
-        <ul>
-          <li>Legal</li>
-          <li>Cookies Policy</li>
-          <li>Privacy Policy</li>
-          <li>Terms of Service</li>
-        </ul>
-      </nav>
-      <nav class="footer-nav-company">
-        <ul>
-          <li>Company</li>
-          <li>About Us</li>
-          <li>Contact Us</li>
-        </ul>
-      </nav>
-      <nav class="footer-nav-social">
-        <ul>
-          <li>Instagram</li>
-          <li>Meta</li>
-          <li>X (Twitter)</li>
-          <li>Youtube</li>
-        </ul>
-      </nav>
+      <div class="footer-left-container">
+        <nav class="footer-nav-company">
+          <ul>
+            <li><span>Company</span></li>
+            <li><a href="#aboutus">About Us</a></li>
+            <li><a href="#contactus">Contact Us</a></li>
+          </ul>
+        </nav>
+        <p>© 2024 - All rights reserved.</p>
+      </div>
+      <div class="footer-right-container">
+        <nav class="footer-nav-legal">
+          <ul>
+            <li><span>Legal</span></li>
+            <li><a href="#">Cookies Policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-nav-social">
+          <ul>
+            <li>
+              <a href="#"
+                ><img
+                  class="socialsimg"
+                  src="./images/instagram-48.png"
+                  alt="Instagram"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="socialsimg"
+                  src="./images/facebook-48.png"
+                  alt="Facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="socialsimg"
+                  src="./images/twitterx-48.png"
+                  alt="Twitter or X "
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="socialsimg"
+                  src="./images/youtube-48.png"
+                  alt="Youtube "
+              /></a>
+            </li>
+            <li>
+              <a href="./index.html"
+                ><img
+                  class="socialsimg"
+                  src="./images/bananasocial-50.png"
+                  alt="Love Bananas? Click Here. "
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </footer>
   </body>
 </html>

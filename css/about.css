@@ -1,50 +1,18 @@
 /* Header styling */
-
-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.header-logo {
-  margin: 0 auto;
-  padding-top: 0.5rem;
-  height: 4rem;
+.background-container {
+  background-image: url("../images/headersplash.png");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding-bottom: 4rem;
   width: auto;
-}
-
-.header-nav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.header-nav ul {
-  padding: 0;
-}
-
-.header-nav li {
-  display: inline-block;
-  margin: 0;
-  width: auto;
-  padding: 0 2rem 0 2rem;
-}
-
-.header-nav li a {
-  text-decoration: none;
 }
 
 /* About Body Styling*/
 
 .about-hero {
   text-align: center;
-}
-
-.about-text {
-  justify-items: center;
-  flex: 1;
-  flex-basis: 50%;
+  padding-left: 50px;
 }
 
 .about-blurb-container {
@@ -53,18 +21,92 @@ header {
   align-items: center;
   gap: 5%;
 }
+.abouttext {
+  flex: 1;
+  padding-left: 50px;
+}
+
+.aboutimg-fig {
+  flex: 1;
+  padding-right: 50px;
+}
 
 .aboutimg-img {
-  flex: 1;
-  flex-basis 50%;
-  width: auto;
-  height: auto;
-  max-width: auto;
-  max-height: 300px;
   border-radius: 10%;
-
+  max-width: 100%;
+  max-height: auto;
 }
 
 .about-figcap {
-  text-align: left;
+  text-align: right;
+  font-size: 0.75rem;
+}
+
+.abouttext h3 {
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.abouttext p {
+  padding: 0.8rem 0 0.8rem 0;
+}
+
+/*CONTACT section styling*/
+
+.contact {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5%;
+  background-color: var(--tint);
+  padding: 50px;
+  margin: 0;
+}
+
+.contact-map-add {
+  flex: 1;
+}
+.contact-form {
+  flex: 1;
+  align-self: flex-start;
+}
+
+iframe {
+  max-width: 100%;
+  max-height: auto;
+  border-radius: 10%;
+}
+.contact-form {
+  flex: 1;
+}
+
+.contact-address-div,
+p {
+  padding: 0;
+  margin: 0;
+  line-height: 1.5rem;
+}
+
+/* FORM Styling */
+
+form {
+  width: 100%;
+  margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+  box-sizing: border-box;
+}
+form input[type="submit"] {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  box-sizing: border-box;
+  color: var(--text-body);
+  font-weight: bolder;
+  background-color: var(--primary);
+  border-radius: 5px;
+  border: 1px solid #dbbe18;
 }

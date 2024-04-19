@@ -20,10 +20,12 @@ header {
 }
 
 .header-logo {
+  flex: 1;
   margin: 0 auto;
   padding-top: 0.5rem;
-  height: 4rem;
-  width: auto;
+
+  max-width: 100%;
+  max-height: auto;
 }
 
 .header-nav {
@@ -45,15 +47,34 @@ header {
 
 .header-nav li a {
   text-decoration: none;
+  font-size: 1.1rem;
 }
+
+header a:link,
+footer a:visited {
+  text-decoration: none; 
+  color: var(--text-heading); 
+  font-weight: lighter;
+}
+
+header a:hover{
+  text-decoration: underline; 
+  color: var(--text-body);
+  font-weight: bolder;
+  font-size: 1.1rem;
+}
+
+header a:active{
+  text-decoration: underline; 
+  color: var(--text-heading); 
+  font-size: 1rem;
+  }
 
 /* BODY styling */
 
 body {
-  width: 90%;
   margin: 0 auto;
   font-family: Arial, Helvetica, sans-serif;
-  margin: 1rem 5rem 1rem 5rem;
 }
 
 section {
@@ -61,3 +82,105 @@ section {
 }
 
 /* FOOTER styling tbc */
+
+footer {
+  color: var(--tint);
+  background-color: var(--footer-background);
+  padding: 3.2rem 5rem 1.5rem 5rem;
+  display: flex;
+  justify-content: space-between;
+
+    .footer,span {
+    font-weight: bolder;
+  }
+
+  .footer,p {
+    font-size: 0.8rem;
+  }
+
+  .footer-left-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+.footer-nav-legal {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-nav-legal ul {
+  padding: 0;
+  list-style-type: none;
+}
+.footer-nav-legal li {
+    padding: 0.6rem;
+}
+
+.footer-right-container {
+  display: flex;
+  gap: 5rem;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-evenly;
+}
+.footer-nav-company {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-nav-company ul {
+  padding: 0;
+  list-style-type: none;
+  text-align: left;
+}
+.footer-nav-company li {
+    padding: 0.6rem;
+}
+
+.footer-nav-social {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-nav-social ul {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav-social li {
+  display: inline-block;
+  margin: 0;
+  width: auto;
+  padding: 0 0.5rem 0 0.5rem;
+}
+
+.socialsimg, img:hover {
+  height: 2rem;
+}
+
+footer,a:link,
+footer,a:visited {
+  text-decoration: none; 
+  color: var(--tint); 
+}
+
+footer,a:hover{
+  text-decoration: underline; 
+  color: var(--primary);
+}
+
+footer,a:active{
+   text-decoration: wavy; 
+  color: var(--primary); 
+  font-weight: bolder;
+}
+
+.socialsimg, img{
+  width: 100%;
+  height: 1.5rem;
+  margin: 0 auto;
+}
