@@ -70,8 +70,10 @@
 }
 
 .tabimg-img {
-    max-height: 300px;
+    max-width: 40%;
+    max-height: auto;
     border-radius: 10%;
+    flex: 1;
 }
 
 .tab {
