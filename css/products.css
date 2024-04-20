@@ -2,18 +2,21 @@
   --product-box-width: 250px;
 }
 
-.bodycontainer {
-  margin: 0 auto;
-}
-
-.mainflexcontainer {
+content-wrapper {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   max-width: 1280px;
+  height: max-content;
 }
 
-/* Filter search bar */
+.product-title {
+  text-align: center;
+  margin-bottom: 7rem;
+  justify-self: center;
+}
+
+/* Filter search bar*/
 .filter {
   display: flex;
   align-items: center;

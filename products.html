@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/global.css" />
-    <title>Peeling-Good | Products</title>
     <!-- star icon library -->
     <link
       rel="stylesheet"
@@ -13,35 +12,36 @@
 
     <script defer src="./javascript/filter.js"></script>
     <script defer src="./javascript/loadmore.js"></script>
+    <title>Peeling-Good | Products</title>
   </head>
 
   <body>
-    <div class="bodycontainer">
-      <div class="background-container">
-        <header class="header">
-          <div>
-            <img
-              class="header-logo"
-              src="./images/companylogo.png"
-              alt="Peeling Good"
-            />
-          </div>
-          <nav class="header-nav">
-            <ul>
-              <li><a href="./index.html">Home</a></li>
-              <li><a href="./products.html">Products</a></li>
-              <li><a href="./about.html">About</a></li>
-            </ul>
-          </nav>
-        </header>
+    <div class="content-wrapper">
+    <div class="background-container" id="background-container">
+      <header class="header">
+        <div>
+          <img
+            class="header-logo"
+            src="./images/companylogo.png"
+            alt="Peeling Good"
+          />
+        </div>
+        <nav class="header-nav">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./products.html">Products</a></li>
+            <li><a href="./about.html">About</a></li>
+          </ul>
+        </nav>
+      </header>
 
-        <div class="about-hero" id="aboutus">
+        <div class="product-title" id="product-title">
           <h1>Store</h1>
           <p>If you're reading this, you have to buy something!</p>
         </div>
       </div>
       <main>
-        <div class="mainflexcontainer">
+    
           <!-- container for main content-->
 
           <section class="filter">
@@ -196,74 +196,88 @@
               <a href="#">Show More</a>
             </button>
           </section>
-        </div>
+      </div>
+    </div>
+      
       </main>
-      <footer>
-        <div class="footer-left-container">
-          <nav class="footer-nav-company">
-            <ul>
-              <li><span>Company</span></li>
-              <li><a href="#aboutus">About Us</a></li>
-              <li><a href="#contactus">Contact Us</a></li>
-            </ul>
-          </nav>
-          <p>© 2024 - All rights reserved.</p>
-        </div>
-        <div class="footer-right-container">
-          <nav class="footer-nav-legal">
-            <ul>
-              <li><span>Legal</span></li>
-              <li><a href="#">Cookies Policy</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms of Service</a></li>
-            </ul>
-          </nav>
-          <nav class="footer-nav-social">
-            <ul>
-              <li>
-                <a href="#"
-                  ><img
-                    class="socialsimg"
-                    src="./images/instagram-48.png"
-                    alt="Instagram"
-                /></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><img
-                    class="socialsimg"
-                    src="./images/facebook-48.png"
-                    alt="Facebook"
-                /></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><img
-                    class="socialsimg"
-                    src="./images/twitterx-48.png"
-                    alt="Twitter or X "
-                /></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><img
-                    class="socialsimg"
-                    src="./images/youtube-48.png"
-                    alt="Youtube "
-                /></a>
-              </li>
-              <li>
-                <a href="./index.html"
-                  ><img
-                    class="socialsimg"
-                    src="./images/bananasocial-50.png"
-                    alt="Love Bananas? Click Here. "
-                /></a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </footer>
+<    <footer>
+      <div class="footer-content-wrapper">
+      <div class="footer-left-container">
+<!-- COMPANY Nav --> 
+                <nav class="footer-nav-company">
+<!-- line below hidden in desktop -->
+          <span id="company-button">Company <img src="./images/sort-down-30.png"/> </span>
+          <ul>
+<!-- line below hidden in mobile -->
+            <li><span>Company </span></li>
+            <li><a href="#aboutus">About Us</a></li>
+            <li><a href="#contactus">Contact Us</a></li>
+          </ul>
+        </nav>
+        <p>© 2024 - All rights reserved.</p>
+      </div>
+<!-- LEGAL Nav --> 
+      <div class="footer-right-container">
+        <nav class="footer-nav-legal">
+<!-- line below hidden in desktop -->
+          <span id="legal-button">Legal<img src="./images/sort-down-30.png"/></span>
+          <ul>
+<!-- line below hidden in mobile -->
+            <li><span>Legal</span></li>
+            <li><a href="#">Cookies Policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </nav>
+<!-- SOCIAL MEDIA ICON  Nav  NB Hidden in Mobile --> 
+        <nav class="footer-nav-social">
+          <ul>
+            <li>
+              <a href="#"
+                ><img
+                  class="socialsimg"
+                  src="./images/instagram-48.png"
+                  alt="Instagram"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="socialsimg"
+                  src="./images/facebook-48.png"
+                  alt="Facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="socialsimg"
+                  src="./images/twitterx-48.png"
+                  alt="Twitter or X "
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="socialsimg"
+                  src="./images/youtube-48.png"
+                  alt="Youtube "
+              /></a>
+            </li>
+            <li>
+              <a href="./index.html"
+                ><img
+                  class="socialsimg"
+                  src="./images/bananasocial-50.png"
+                  alt="Love Bananas? Click Here. "
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      </div>
+    </footer>
     </div>
   </body>
 </html>
+ 

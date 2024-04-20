@@ -8,15 +8,16 @@
   </head>
 
   <body>
-    <div class="header-container">
-      <header class="header">
-        <div>
+    <div class="background-container">
+      <div class="content-wrapper">
+        <header class="header">
+          <div>
           <img
             class="header-logo"
             src="./images/companylogo.png"
             alt="Peeling Good"
           />
-        </div>
+          </div>
         <nav class="header-nav">
           <ul>
             <li><a href="./index.html">Home</a></li>
@@ -24,13 +25,14 @@
             <li><a href="./about.html">About</a></li>
           </ul>
         </nav>
-      </header>
+        </header>
 <main>
-      <div class="about-hero" id="aboutus">
+        <div class="index-title" id="home-title">
         <h1>We sell Bananas</h1>
         <p>Bananas that Appeal to Every Peel-sure!</p>
-      </div>
-    </div>
+        </div>
+      
+    
     <div class="hero-img-container">
       <img
         class="hero-img"
@@ -315,26 +317,37 @@
       </p>
     </section>
 </main>
+</div>
     <footer>
+      <div class="footer-content-wrapper">
       <div class="footer-left-container">
-        <nav class="footer-nav-company">
+<!-- COMPANY Nav --> 
+                <nav class="footer-nav-company">
+<!-- line below hidden in desktop -->
+          <span id="company-button">Company <img src="./images/sort-down-30.png"/> </span>
           <ul>
-            <li><span>Company</span></li>
+<!-- line below hidden in mobile -->
+            <li><span>Company </span></li>
             <li><a href="#aboutus">About Us</a></li>
             <li><a href="#contactus">Contact Us</a></li>
           </ul>
         </nav>
         <p>© 2024 - All rights reserved.</p>
       </div>
+<!-- LEGAL Nav --> 
       <div class="footer-right-container">
         <nav class="footer-nav-legal">
+<!-- line below hidden in desktop -->
+          <span id="legal-button">Legal<img src="./images/sort-down-30.png"/></span>
           <ul>
+<!-- line below hidden in mobile -->
             <li><span>Legal</span></li>
             <li><a href="#">Cookies Policy</a></li>
             <li><a href="#">Privacy Policy</a></li>
             <li><a href="#">Terms of Service</a></li>
           </ul>
         </nav>
+<!-- SOCIAL MEDIA ICON  Nav  NB Hidden in Mobile --> 
         <nav class="footer-nav-social">
           <ul>
             <li>
@@ -380,8 +393,10 @@
           </ul>
         </nav>
       </div>
+      </div>
     </footer>
 
     <script src="javascript/index.js"></script>
+  
   </body>
 </html>

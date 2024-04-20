@@ -3,13 +3,14 @@
 }
 
 /* Hero */
-.header-container {
-  background-image: url("../images/headersplash.png");
-  background-size: cover;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  width: auto;
-  padding-bottom: 300px;
+.index-title {
+  text-align: center;
+  margin-bottom: 7rem;
+  justify-self: center;
+}
+
+.index-title > h1 {
+  margin-bottom: 1rem;
 }
 
 .hero-img-container {
@@ -18,11 +19,11 @@
   height: auto;
   justify-content: center;
   align-items: center;
-  margin: -15rem 0 5rem 0;
+  margin: -3rem 0 5rem 0;
 }
 
 .hero-img {
-  max-width: 60%;
+  max-width: 70%;
   max-height: auto;
   border-radius: 5rem;
   flex: 1;
@@ -84,7 +85,7 @@
 }
 
 .tabimg-img {
-  max-width: 40%;
+  max-width: 90%;
   max-height: auto;
   border-radius: 10%;
   flex: 1;
