@@ -1,6 +1,8 @@
 @import url("index.css");
 @import url("products.css");
 @import url("about.css");
+@import url("./burger.css");
+
 :root {
   /*color variables*/
   --footer-background: #1d2830;
@@ -61,63 +63,80 @@ header {
   align-items: center;
 }
 
-.header-logo {
-  flex: 1;
-  margin: 0 auto;
-  padding-top: 0.5rem;
+/*Header DESKTOP behaviours*/
 
-  max-width: 100%;
-  max-height: auto;
+@media (min-width: 768px) {
+  .header-logo {
+    flex: 1;
+    margin: 0 auto;
+    padding-top: 0.5rem;
+
+    max-width: 100%;
+    max-height: auto;
+  }
+
+  .header-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header-nav ul {
+    padding: 0;
+  }
+
+  .header-nav li {
+    display: inline-block;
+    margin: 0;
+    width: auto;
+    padding: 0 2rem 0 2rem;
+  }
+
+  .header-nav li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bolder;
+  }
+
+  header a:link,
+  footer a:visited {
+    text-decoration: none;
+    color: var(--text-heading);
+    font-weight: lighter;
+  }
+
+  header a:hover {
+    text-decoration: underline;
+    color: var(--text-body);
+  }
+
+  header a:active {
+    text-decoration: underline;
+    color: var(--text-heading);
+  }
+  .background-container {
+    background-image: url("../images/headersplash.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    width: auto;
+    height: 32rem;
+    flex: 1;
+  }
 }
 
-.header-nav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+/*HEADER NAV Hide-for-mobile adjustments*/
+@media (max-width: 768px) {
+  .header-logo {
+    display: none;
+  }
+
+  .header-nav {
+    display: none;
+  }
 }
 
-.header-nav ul {
-  padding: 0;
-}
-
-.header-nav li {
-  display: inline-block;
-  margin: 0;
-  width: auto;
-  padding: 0 2rem 0 2rem;
-}
-
-.header-nav li a {
-  text-decoration: none;
-  font-size: 1.1rem;
-  font-weight: bolder;
-}
-
-header a:link,
-footer a:visited {
-  text-decoration: none;
-  color: var(--text-heading);
-  font-weight: lighter;
-}
-
-header a:hover {
-  text-decoration: underline;
-  color: var(--text-body);
-}
-
-header a:active {
-  text-decoration: underline;
-  color: var(--text-heading);
-}
-.background-container {
-  background-image: url("../images/headersplash.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
-  width: auto;
-  height: 38em;
-  flex: 1;
-}
+/*Footer NAV MOBILE adjustments*/
 
 @media (max-width: 768px) {
   .background-container {
@@ -224,7 +243,6 @@ section {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    text-align: center:
   }
 
   .footer-left-container p {
@@ -240,10 +258,8 @@ section {
 
   #company-button,
   #legal-button {
-    
-   display: inline-block;
+    display: inline-block;
     padding-top: 2rem;
-     
   }
 }
 
@@ -352,7 +368,6 @@ footer a:active {
 /*Footer NAV MOBILE adjustments*/
 
 @media (max-width: 768px) {
-
   .footer-content-wrapper {
     display: flex;
     flex-direction: column;
@@ -360,18 +375,17 @@ footer a:active {
     align-items: center;
     justify-items: center;
     margin: 0 auto;
-    
   }
 
   .footer-left-container p {
     text-align: center;
     padding: 0 0 1rem 0;
     margin: 0 auto;
-    }
+  }
 
-    .footer-right-container {
+  .footer-right-container {
     gap: 2rem;
-      margin: 0 auto;
+    margin: 0 auto;
   }
   .footer-nav-social {
     display: none;
@@ -393,32 +407,30 @@ footer a:active {
     max-height: 1rem;
     padding-left: 2rem;
   }
-  
 
-    /* Hide dropdown as default */
+  /* Hide dropdown as default */
   .footer-nav-legal ul,
   .footer-nav-company ul,
   footer ul span {
-    display: none; 
+    display: none;
   }
 
   .footer-nav-company span,
   .footer-nav-legal span {
-    cursor: pointer; 
-    
+    cursor: pointer;
   }
 
   .footer-nav-company:hover ul,
   .footer-nav-legal:hover ul,
   .footer-nav-company:active ul,
-  .footer-nav-legal:active ul{
-    display: flex; 
+  .footer-nav-legal:active ul {
+    display: flex;
     flex-direction: column;
     color: var(--primary);
   }
 
   .footer-left-container {
-    order: 2; 
+    order: 2;
     padding-top: 1rem;
   }
 

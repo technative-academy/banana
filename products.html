@@ -19,6 +19,60 @@
     <div class="content-wrapper">
     <div class="background-container" id="background-container">
       <header class="header">
+
+        <!-- Mobile Burger Menu Below - kept hidden in Desktop > 768px Displays-->
+        <script defer src="./javascript/burger.js"></script>
+        <div class="header-mobile-container">
+      <img
+        class="mobile-company-logo"
+        src="./images/companylogo.png"
+        alt="Peeling Good Logo"
+      />
+      <div class="burger">
+        <h2 id="burgername">Menu</h2>
+        <div class="menu-toggle" id="menuToggle">
+          <div class="burgerbar"></div>
+          <div class="burgerbar"></div>
+          <div class="burgerbar"></div>
+        </div>
+        <div class="menu" id="burgermenu">
+          <button class="menu-option">
+            <a href="./index.html" alt="Home"> Home</a>
+          </button>
+          <button class="menu-option">
+            <a href="./products.html" alt="Home">Products</a>
+          </button>
+          <button class="menu-option">
+            <a href="./about.html" alt="Home">About</a>
+          </button>
+          <!--All this talk of Burgers makes me want a Brie 'n' Bacon -->
+          <div class="submenu">
+            <button class="menu-option submenu-toggle">Social</button>
+            <div class="submenu-content">
+              <button class="submenu-option">
+                <a href="https://www.instagram.com/" alt="Instagram">Instagram</a>
+              </button>
+              <button class="submenu-option">
+                <a href="https://www.facebook.com/" alt="Facebook">Facebook</a>
+              </button>
+              <button class="submenu-option">
+                <a href="https://twitter.com" alt="X Twitter">X (Twitter)</a>
+              </button>
+              <button class="submenu-option">
+                <a href="https://www.youtube.com" alt="Youtube">Youtube</a>
+              </button>
+              <button class="submenu-option">
+                <a href="./index.html" alt="More Bananas">Bananas</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--END of Burger Menu - kept hidden in Desktop > 768px-->
+    </div>
+    <!--END of Mobile Header Container- kept hidden in Desktop > 768px-->
+
+
         <div>
           <img
             class="header-logo"
@@ -233,7 +287,7 @@
         <nav class="footer-nav-social">
           <ul>
             <li>
-              <a href="#"
+              <a href="https://www.instagram.com/"
                 ><img
                   class="socialsimg"
                   src="./images/instagram-48.png"
@@ -241,7 +295,7 @@
               /></a>
             </li>
             <li>
-              <a href="#"
+              <a href="https://www.facebook.com/"
                 ><img
                   class="socialsimg"
                   src="./images/facebook-48.png"
@@ -249,7 +303,7 @@
               /></a>
             </li>
             <li>
-              <a href="#"
+              <a href="https://twitter.com/"
                 ><img
                   class="socialsimg"
                   src="./images/twitterx-48.png"
@@ -257,7 +311,7 @@
               /></a>
             </li>
             <li>
-              <a href="#"
+              <a href="https://www.youtube.com/"
                 ><img
                   class="socialsimg"
                   src="./images/youtube-48.png"
