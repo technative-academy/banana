@@ -1,5 +1,30 @@
-# banana
-# WE LOVE BANANAS!
+# Peeling Good Banana Merchants
+
+The best banana merchants around!
+
+Welcome to Peeling Good Banana Merchant, your one-stop-shop for the freshest and most delicious bananas! Our online store is dedicated to providing high-quality bananas delivered straight to your doorstep. Whether you're a banana enthusiast, a health-conscious consumer, or just looking for a tasty snack, we've got you covered.
+
+## Features
+
+- **Fresh Bananas**: We source our bananas from trusted growers to ensure freshness and quality.
+- **Wide Variety**: Explore a variety of banana types including Cavendish, Lady Finger, and more!
+- **Convenient Ordering**: Easily browse our selection, add items to your cart, and checkout securely.
+- **Fast Delivery**: Enjoy quick and reliable delivery right to your doorstep.
+- **Customer Satisfaction**: We strive to provide exceptional customer service and satisfaction.
+
+*Peeling Good - Bringing Joy, One Banana at a Time*
+
+# Our Dev Journey
+
+## Our Process
+
+We decided to allocate a page to each other.
+- Index - Chloe
+- About - Conrad
+- Products - Seb
+
+We decided to do this to allow each other a chance of working on HTML, CSS and JS. As well as reduce any conflicts in Git. This was our method until day 3, when we realised the index page required a lot more work. So we each took a section and improved it, based on each other's and Pete's feedback.
+
 
 <details>
 
@@ -80,5 +105,37 @@ Working Tabs.
 ### About
 
 ![alt text](readme_images/day2-products.png)
+
+</details>
+
+<details>
+
+<summary>Day 3</summary>
+
+# How far we've got
+## GHPages as of 4:30pm 19/04/2024
+### Index
+
+#### Desktop
+
+#### Mobile
+
+![alt text](readme_images/day3-index.png)
+
+### Products
+
+#### Desktop
+
+#### Mobile
+
+![alt text](readme_images/day3-about.png)
+
+### About
+
+#### Desktop
+
+#### Mobile
+
+![alt text](readme_images/day3-products.png)
 
 </details>
