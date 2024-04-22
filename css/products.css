@@ -75,6 +75,21 @@
 
 .fa-star {
     color: gray;
+
+}
+
+.hover-checked{
+    color:orange;
+
+}
+
+.hover-unchecked{
+    color:gray;
+
+}
+
+.unchecked{
+    color:gray;
 }
 
 .product-item-info {
