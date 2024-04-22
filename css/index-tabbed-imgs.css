@@ -1,0 +1,107 @@
+/* Tabbed Images Compartment */
+.tabimg {
+    background-color: var(--tint);
+    padding: 50px;
+}
+
+.tabimg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.tabimg-img-container {
+    text-align: center;
+}
+
+.tabimg-img {
+    max-width: 90%;
+    max-height: auto;
+    border-radius: 10%;
+    flex: 1;
+}
+
+.tabimg-desc {
+    font-size: var(--desktop-h3-size);
+    font-weight: var(--desktop-h3-weight);
+    line-height: var(--desktop-h3-line);
+}
+
+.tabs {
+    flex: 1;
+}
+
+.tab {
+    padding: 5px 10px;
+    width: 30rem;
+    margin: 1rem;
+    cursor: pointer;
+    font-size: var(--desktop-h3-size);
+    font-weight: var(--desktop-h3-weight);
+    line-height: var(--desktop-h3-line);
+}
+
+.tab-text {
+    font-size: var(--desktop-body-size);
+    line-height: var(--desktop-body-line);
+    font-weight: var(--desktop-body-weight);
+}
+
+.highlighted {
+    border-left: 10px solid var(--primary);
+    background-color: #e9e6f0c5;
+}
+
+.not-highlighted {
+    border-top: 1px solid rgb(196, 192, 192);
+}
+
+@media screen and (max-width: 1024px) {
+    .tabimg-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+    }
+
+    .tabs {
+        text-align: center;
+    }
+
+    .tabimg-img {
+        max-width: 60%;
+        max-height: auto;
+        border-radius: 10%;
+        flex: 1;
+    }
+
+    .tabimg-desc {
+        font-size: var(--mobile-h3-size);
+        line-height: var(--mobile-h3-line);
+        font-weight: var(--mobile-h3-weight);
+    }
+
+    .tab {
+        font-size: var(--mobile-h3-size);
+        font-weight: var(--mobile-h3-weight);
+        line-height: var(--desktop-h3-line);
+    }
+
+    .tab-text {
+        font-size: var(--mobile-body-size);
+        line-height: var(--mobile-body-line);
+        font-weight: var(--mobile-body-weight);
+    }
+
+    .highlighted {
+        border-top: 10px solid var(--primary);
+        border-left: none;
+        background-color: #e9e6f0c5;
+    }
+
+    .not-highlighted {
+        border-top: 1px solid rgb(196, 192, 192);
+    }
+}
