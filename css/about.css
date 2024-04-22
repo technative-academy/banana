@@ -1,40 +1,66 @@
-/* Header styling */
-.background-container {
-  background-image: url("../images/headersplash.png");
-  background-size: cover;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  padding-bottom: 4rem;
-  width: auto;
-}
-
 /* About Body Styling*/
 
 .about-hero {
   text-align: center;
-  padding-left: 50px;
+  margin-bottom: 15vh;
 }
 
-.about-blurb-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5%;
+@media (max-width: 768px) {
+  .about-hero {
+    margin: 2rem auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-blurb-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-blurb-container {
+    flex-direction: column;
+    margin: 2rem auto;
+  }
 }
 .abouttext {
   flex: 1;
-  padding-left: 50px;
+  padding: 0 0rem 0 4rem;
+  justify-content: center;
+  align-items: center;
 }
 
-.aboutimg-fig {
+@media (max-width: 768px) {
+  .abouttext {
+    padding: 6rem 5rem 0 5rem;
+    text-align: left;
+  }
+}
+
+.aboutimgfig {
   flex: 1;
-  padding-right: 50px;
+  padding-right: 3rem;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .aboutimgfig {
+    flex: 1;
+    padding: 3rem;
+    justify-content: center;
+  }
 }
 
 .aboutimg-img {
   border-radius: 10%;
   max-width: 100%;
-  max-height: auto;
+  height: auto;
 }
 
 .about-figcap {
@@ -46,7 +72,7 @@
   margin: 0.5rem 0 0.5rem 0;
 }
 
-.abouttext p {
+.abouttext > p {
   padding: 0.8rem 0 0.8rem 0;
 }
 
@@ -62,6 +88,14 @@
   margin: 0;
 }
 
+@media (max-width: 768px) {
+  .contact {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .contact-map-add {
   flex: 1;
 }
@@ -70,17 +104,32 @@
   align-self: flex-start;
 }
 
-iframe {
+@media (max-width: 768px) {
+  .contact-form {
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.contact-h2 {
+  margin-top: 0;
+}
+
+.googlemap {
   max-width: 100%;
   max-height: auto;
   border-radius: 10%;
 }
-.contact-form {
-  flex: 1;
+
+@media (max-width: 768px) {
+  .googlemap {
+    margin-top: 3rem;
+  }
 }
 
-.contact-address-div,
-p {
+#contact-address-div > p {
   padding: 0;
   margin: 0;
   line-height: 1.5rem;

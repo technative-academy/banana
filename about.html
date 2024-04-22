@@ -3,14 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/about.css" />
     <link rel="stylesheet" href="./css/global.css" />
-    <title>Peeling-Good</title>
+  
+    
+    <title>Peeling-Good | About & Contact </title>
   </head>
 
   <body>
     <div class="background-container">
+      <div class="content-wrapper">
       <header class="header">
+
+        <!-- Mobile Burger Menu Below - kept hidden in Desktop > 768px Displays-->
+        <script defer src="./javascript/burger.js"></script>
+        <div class="header-mobile-container">
+      <img
+        class="mobile-company-logo"
+        src="./images/companylogo.png"
+        alt="Peeling Good Logo"
+      />
+      <div class="burger">
+        <h2 id="burgername">Menu</h2>
+        <div class="menu-toggle" id="menuToggle">
+          <div class="burgerbar"></div>
+          <div class="burgerbar"></div>
+          <div class="burgerbar"></div>
+        </div>
+        <div class="menu" id="burgermenu">
+          <button class="menu-option">
+            <a href="./index.html" alt="Home"> Home</a>
+          </button>
+          <button class="menu-option">
+            <a href="./products.html" alt="Home">Products</a>
+          </button>
+          <button class="menu-option">
+            <a href="./about.html" alt="Home">About</a>
+          </button>
+          <!--All this talk of Burgers makes me want a Brie 'n' Bacon -->
+          <div class="submenu">
+            <button class="menu-option submenu-toggle">Social</button>
+            <div class="submenu-content">
+              <button class="submenu-option">
+                <a href="https://www.instagram.com/" alt="Instagram">Instagram</a>
+              </button>
+              <button class="submenu-option">
+                <a href="https://www.facebook.com/" alt="Facebook">Facebook</a>
+              </button>
+              <button class="submenu-option">
+                <a href="https://twitter.com" alt="X Twitter">X (Twitter)</a>
+              </button>
+              <button class="submenu-option">
+                <a href="https://www.youtube.com" alt="Youtube">Youtube</a>
+              </button>
+              <button class="submenu-option">
+                <a href="./index.html" alt="More Bananas">Bananas</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--END of Burger Menu - kept hidden in Desktop > 768px-->
+    </div>
+    <!--END of Mobile Header Container- kept hidden in Desktop > 768px-->
+
         <div>
           <img
             class="header-logo"
@@ -26,15 +81,19 @@
           </ul>
         </nav>
       </header>
-<section class="aboutsection">
+    <main>
+        
+    <section class="aboutsection">
       <div class="about-hero" id="aboutus">
         <h1>About us</h1>
         <p>Possibly, nearly, almost the best banana merchants around!</p>
-      </div>
-    </div>
+      
+    </div class="background-container">
+
+<!--ABOUT Blurb and Image -->
 
     <div class="about-blurb-container">
-      <section class="abouttext">
+      <div class="abouttext">
         <h3>Tasty bananas</h3>
         <h3>Really tasty bananas!</h3>
         <p>
@@ -51,9 +110,10 @@
           placerat tortor bananas. Praesent iaculis leo eu eros facilisis
           feugiat.
         </p>
-      </section>
-
-      <figure class="aboutimg-fig">
+        </div>
+    
+    
+      <figure class="aboutimgfig">
         <img
           class="aboutimg-img"
           src="./images/banana_market.jpg"
@@ -75,10 +135,12 @@
     </div>
     </section>
 
+<!--CONTACT embedded map and address -->
+
     <section class="contact" id="contactus">
       <div class="contact-map-add">
         <div id="contact-map-div">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12338.957081351464!2d-0.14333763528324092!3d50.82928199827322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1713524866729!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe class="googlemap" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12338.957081351464!2d-0.14333763528324092!3d50.82928199827322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1713524866729!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
         <div id="contact-address-div">
@@ -90,8 +152,10 @@
         </div>
       </div>
 
+<!--CONTACT Form -->
+
       <div class="contact-form">
-        <h2>Contact Us</h2>
+        <h2 class="contact-h2">Contact Us</h2>
 
         <form action="#" method="post">
           <div>
@@ -131,31 +195,42 @@
         </form>
       </div>
     </section>
-
+  </div>
+  </main>
     <footer>
+      <div class="footer-content-wrapper">
       <div class="footer-left-container">
-        <nav class="footer-nav-company">
+<!-- COMPANY Nav --> 
+                <nav class="footer-nav-company">
+<!-- line below hidden in desktop -->
+          <span id="company-button">Company <img src="./images/sort-down-30.png"/> </span>
           <ul>
-            <li><span>Company</span></li>
+<!-- line below hidden in mobile -->
+            <li><span>Company </span></li>
             <li><a href="#aboutus">About Us</a></li>
             <li><a href="#contactus">Contact Us</a></li>
           </ul>
         </nav>
         <p>© 2024 - All rights reserved.</p>
       </div>
+<!-- LEGAL Nav --> 
       <div class="footer-right-container">
         <nav class="footer-nav-legal">
+<!-- line below hidden in desktop -->
+          <span id="legal-button">Legal<img src="./images/sort-down-30.png"/></span>
           <ul>
+<!-- line below hidden in mobile -->
             <li><span>Legal</span></li>
             <li><a href="#">Cookies Policy</a></li>
             <li><a href="#">Privacy Policy</a></li>
             <li><a href="#">Terms of Service</a></li>
           </ul>
         </nav>
+<!-- SOCIAL MEDIA ICON  Nav  NB Hidden in Mobile --> 
         <nav class="footer-nav-social">
           <ul>
             <li>
-              <a href="#"
+              <a href="https://www.instagram.com/"
                 ><img
                   class="socialsimg"
                   src="./images/instagram-48.png"
@@ -163,7 +238,7 @@
               /></a>
             </li>
             <li>
-              <a href="#"
+              <a href="https://www.facebook.com/"
                 ><img
                   class="socialsimg"
                   src="./images/facebook-48.png"
@@ -171,7 +246,7 @@
               /></a>
             </li>
             <li>
-              <a href="#"
+              <a href="https://twitter.com/"
                 ><img
                   class="socialsimg"
                   src="./images/twitterx-48.png"
@@ -179,7 +254,7 @@
               /></a>
             </li>
             <li>
-              <a href="#"
+              <a href="https://www.youtube.com/"
                 ><img
                   class="socialsimg"
                   src="./images/youtube-48.png"
@@ -197,6 +272,8 @@
           </ul>
         </nav>
       </div>
+      </div>
     </footer>
+    </div>
   </body>
 </html>
