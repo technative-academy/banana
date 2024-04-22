@@ -67,11 +67,14 @@
     }
     /* on small screens, grey "selected" tint enlarged to encompass taller column of text*/
     .testimonies-person-description {
-        height: 250px;
+        height: 200px;
     }
     /*shrink quote font-size on mobile*/
     .quote {
         font-size: url(--mobile-h3-size);
     }
-    
+
+    #bananaman-longtext {
+        display: none;
+    }
 }
