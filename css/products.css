@@ -96,21 +96,20 @@ content-wrapper {
   padding-top: 30px;
 }
 
-.showmore-button {
+.showmore-btn {
+  padding: 10px;
+  border-radius: 5px;
   background-color: var(--primary);
-  width: 30vw;
-  height: 5vw;
+  border: 1px solid #dbbe18;
 }
 
-.showmore-button:hover {
-  background-color: #9f5e33;
-}
 
-.showmore-button a {
-  color: var(--text-body);
-  text-decoration: none;
-  font-size: large;
-  width: max-content;
+.showmore-btn:active {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--primary);
+  border: 1px;
+  margin: 5px;
 }
 
 /* hide selector for filter functionality */
