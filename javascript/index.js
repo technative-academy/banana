@@ -42,7 +42,7 @@ function showContent(event) {
             clickedTab.classList.remove('not-highlighted')
             break
         case 'plantain':
-            image.setAttribute('src', 'images/plantainsonwhitebg.jpg')
+            image.setAttribute('src', 'images/Plantainsonwhitebg.jpg')
             desc.textContent = "Looks like a banana but it's not!"
             tabs.forEach((tab) => tab.classList.remove('highlighted'))
             tabs.forEach((tab) => tab.classList.add('not-highlighted'))
