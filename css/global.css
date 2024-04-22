@@ -209,8 +209,9 @@ header {
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', Helvetica, sans-serif;
-    overflow-x: hidden;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+
+  overflow-x: hidden;
 }
 
 /* Styles for screens with a minimum width of 768 pixels i.e. Large Tablet - Desktop*/
