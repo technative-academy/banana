@@ -45,7 +45,7 @@
 .tab-text {
     font-size: var(--desktop-body-size);
     line-height: var(--desktop-body-line);
-    font-weight: var( --desktop-body-weight);
+    font-weight: var(--desktop-body-weight);
 }
 
 .highlighted {
@@ -66,10 +66,42 @@
         gap: 5%;
     }
 
+    .tabs {
+        text-align: center;
+    }
+
     .tabimg-img {
-        max-width: auto;
-        max-height: 80%;
+        max-width: 60%;
+        max-height: auto;
         border-radius: 10%;
         flex: 1;
+    }
+
+    .tabimg-desc {
+        font-size: var(--mobile-h3-size);
+        line-height: var(--mobile-h3-line);
+        font-weight: var(--mobile-h3-weight);
+    }
+
+    .tab {
+        font-size: var(--mobile-h3-size);
+        font-weight: var(--mobile-h3-weight);
+        line-height: var(--desktop-h3-line);
+    }
+
+    .tab-text {
+        font-size: var(--mobile-body-size);
+        line-height: var(--mobile-body-line);
+        font-weight: var(--mobile-body-weight);
+    }
+
+    .highlighted {
+        border-top: 10px solid var(--primary);
+        border-left: none;
+        background-color: #e9e6f0c5;
+    }
+
+    .not-highlighted {
+        border-top: 1px solid rgb(196, 192, 192);
     }
 }
