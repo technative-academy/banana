@@ -1,8 +1,17 @@
+/*Add margins to make testimonials box have white space left/right*/
+.testimonies{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
 /*adding nice spacing to main quote */
 .quote{
     padding-top: 3rem;
     padding-bottom: 3rem;
     color: url(--text-body);
+    font-size:url(--desktop-h3-size);
+    font-style: italic;
 }
 
 /*make person tabs into a single row */
@@ -38,7 +47,8 @@
 
 /*Ensure uniformity of each img*/
 .testimonies-person img{
-    height: 80px;
+    height: 70px;
+    width:70px;
     margin-right: 5%;
 }
 /*media query */
@@ -56,5 +66,12 @@
     .testimonies-container{
         flex-shrink: inherit;
     }
-
+    /* on small screens, grey "selected" tint enlarged to encompass taller column of text*/
+    .testimonies-person-description{
+        height:250px;
+    }
+    /*shrink quote font-size on mobile*/
+    .quote{
+        font-size: url(--mobile-h3-size);
+    }
 }
