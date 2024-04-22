@@ -1,133 +1,136 @@
 /*keeping Mobile header version hidden*/
 
 @media (min-width: 768px) {
-  .burger {
-    display: none;
-  }
+    .burger {
+        display: none;
+    }
 
-  .mobile-company-logo {
-    display: none;
-  }
+    .mobile-company-logo {
+        display: none;
+    }
 }
 /*Showing Mobile header version*/
 @media (max-width: 768px) {
-  .header-mobile-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding: 1rem 2rem;
-    gap: 1rem;
-  }
+    .header-mobile-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 1rem 2rem;
+        gap: 1rem;
+    }
 
-  .mobile-company-logo {
-    flex: 1;
-    height: 20%;
-    width: 50%;
-    min-width: 100px;
-    min-height: auto;
-  }
-  /*The Burger 'picture' itself*/
-  .burger {
-    flex: 1;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0 2rem;
-    gap: 1rem;
-    max-width: 50%;
-    margin: 0 auto;
-  }
-  /*The Burger 'picture' as a button*/
+    .mobile-company-logo {
+        flex: 1;
+        height: 20%;
+        width: 50%;
+        min-width: 100px;
+        min-height: auto;
+    }
+    /*The Burger 'picture' itself*/
+    .burger {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0 2rem;
+        gap: 1rem;
+        max-width: 50%;
+        margin: 0 auto;
+    }
+    /*The Burger 'picture' as a button*/
 
-  .burgerbar {
-    width: 2.5rem;
-    height: 0.4rem;
-    background-color: var(--text-heading);
-    margin: 0.4rem 0;
-    border-radius: 0.4rem;
-  }
+    .burgerbar {
+        width: 2.5rem;
+        height: 0.4rem;
+        background-color: var(--text-heading);
+        margin: 0.4rem 0;
+        border-radius: 0.4rem;
+    }
 
-  .burgermenu {
-    color: var(--text-heading);
-    padding: 10px;
-  }
+    .burgermenu {
+        color: var(--text-heading);
+        padding: 10px;
+    }
 
-  .menu-toggle {
-    display: inline-block;
-    cursor: pointer;
-    transition: all 0.5s ease;
-  }
+    .menu-toggle {
+        display: inline-block;
+        cursor: pointer;
+        transition: all 0.5s ease;
+    }
 
-  /*Primary menu options*/
-  .menu-option a,
-  .submenu-toggle,
-  .submenu-option a {
-    text-align: center;
-    text-decoration: none;
-    font-weight: bolder;
-  }
+    /*Primary menu options*/
+    .menu-option a,
+    .submenu-toggle,
+    .submenu-option a {
+        text-align: center;
+        text-decoration: none;
+        font-weight: bolder;
+    }
 
-  .menu {
-    display: none;
-    flex-direction: column;
-    transition: all 0.5s ease;
-  }
+    .menu {
+        display: none;
+        flex-direction: column;
+        transition: all 0.5s ease;
+        position: absolute;
+        top: 20%;
+        right: 5%;
+    }
 
-  button.menu-option,
-  .submenu-toggle,
-  .submenu-option {
-    display: block;
-    background-color: #444;
-    color: #f6f3fc;
-    padding: 0.5rem 1rem 0.5rem 1rem;
-    margin: 5px 0;
-    width: 100%;
-    text-align: left;
-    border: none;
-    border-radius: 5px;
-  }
+    button.menu-option,
+    .submenu-toggle,
+    .submenu-option {
+        display: block;
+        background-color: #444;
+        color: #f6f3fc;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        margin: 5px 0;
+        width: 100%;
+        text-align: left;
+        border: none;
+        border-radius: 5px;
+    }
 
-  /* (Social media submenu button - default display is none unless clicked to expand*/
-  .submenu-toggle {
-    padding-left: 20px;
-    transition: all 0.5s ease;
-  }
+    /* (Social media submenu button - default display is none unless clicked to expand*/
+    .submenu-toggle {
+        padding-left: 20px;
+        transition: all 0.5s ease;
+    }
 
-  .submenu-content {
-    padding-right: 5rem;
-    display: none;
-    flex-direction: column;
-    transition: all 1s ease;
-    z-index: 1;
-  }
+    .submenu-content {
+        padding-right: 3rem;
+        display: none;
+        flex-direction: column;
+        transition: all 1s ease;
+        z-index: 1;
+    }
 
-  /*link behaviours within the menu */
+    /*link behaviours within the menu */
 
-  .menu-option a:visited,
-  .submenu-toggle a:visited,
-  .submenu-option a:visited {
-    color: #f6f3fc;
-    font-weight: normal;
-  }
+    .menu-option a:visited,
+    .submenu-toggle a:visited,
+    .submenu-option a:visited {
+        color: #f6f3fc;
+        font-weight: normal;
+    }
 
-  .menu-option a:hover,
-  .submenu-toggle:hover,
-  .submenu-option a:hover,
-  .menu-option:hover,
-  .submenu-option:hover {
-    display: block;
-    background-color: #0c0b0b;
-    color: #ffe135;
-    width: 100%;
-    text-align: left;
-    border-radius: 5px;
-    text-decoration: none;
-  }
+    .menu-option a:hover,
+    .submenu-toggle:hover,
+    .submenu-option a:hover,
+    .menu-option:hover,
+    .submenu-option:hover {
+        display: block;
+        background-color: #0c0b0b;
+        color: #ffe135;
+        width: 100%;
+        text-align: left;
+        border-radius: 5px;
+        text-decoration: none;
+    }
 
-  .menu-option a:active,
-  .submenu-toggle a:active,
-  .submenu-option a:active {
-    color: #ffe135;
-  }
+    .menu-option a:active,
+    .submenu-toggle a:active,
+    .submenu-option a:active {
+        color: #ffe135;
+    }
 }
