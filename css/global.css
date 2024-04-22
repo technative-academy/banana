@@ -131,7 +131,6 @@ header {
         flex: 1;
         position: relative;
         justify-content: center;
-        overflow-x: hidden;
     }
 }
 
@@ -200,7 +199,6 @@ header {
         width: auto;
         height: 15rem;
         flex: 1;
-        overflow-x: hidden;
     }
 }
 
