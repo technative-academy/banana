@@ -1,5 +1,4 @@
-
-@import url("bananacursor.css");
+@import url('bananacursor.css');
 @import url('index.css');
 @import url('products.css');
 @import url('about.css');
@@ -209,6 +208,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
+
 }
 
 /* Styles for screens with a minimum width of 768 pixels i.e. Large Tablet - Desktop*/
@@ -422,7 +422,6 @@ footer a:active {
 /*Footer NAV MOBILE adjustments*/
 
 @media (max-width: 768px) {
-
     .footer-content-wrapper {
         display: flex;
         flex-direction: column;
@@ -494,4 +493,3 @@ footer a:active {
         padding-top: 1rem;
     }
 }
-
