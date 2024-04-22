@@ -3,24 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/global.css" />
+    <script defer src="./javascript/burger.js"></script>
   
     
     <title>Peeling-Good | About & Contact </title>
   </head>
 
   <body>
+    <div class="content-wrapper">
     <div class="background-container">
       <div class="custom-shape-divider-top-1713731422">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
         <path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" class="shape-fill"></path>
-    </svg>
-</div>
-      <div class="content-wrapper">
+        </svg>
+      </div>
       <header class="header">
 
         <!-- Mobile Burger Menu Below - kept hidden in Desktop > 768px Displays-->
-        <script defer src="./javascript/burger.js"></script>
+        
         <div class="header-mobile-container">
       <img
         class="mobile-company-logo"
@@ -36,32 +40,32 @@
         </div>
         <div class="menu" id="burgermenu">
           <button class="menu-option">
-            <a href="./index.html" alt="Home"> Home</a>
+            <a href="./index.html" > Home</a>
           </button>
           <button class="menu-option">
-            <a href="./products.html" alt="Home">Products</a>
+            <a href="./products.html">Products</a>
           </button>
           <button class="menu-option">
-            <a href="./about.html" alt="Home">About</a>
+            <a href="./about.html" >About</a>
           </button>
           <!--All this talk of Burgers makes me want a Brie 'n' Bacon -->
           <div class="submenu">
             <button class="menu-option submenu-toggle">Social</button>
             <div class="submenu-content">
               <button class="submenu-option">
-                <a href="https://www.instagram.com/" alt="Instagram">Instagram</a>
+                <a href="https://www.instagram.com/">Instagram</a>
               </button>
               <button class="submenu-option">
-                <a href="https://www.facebook.com/" alt="Facebook">Facebook</a>
+                <a href="https://www.facebook.com/">Facebook</a>
               </button>
               <button class="submenu-option">
-                <a href="https://twitter.com" alt="X Twitter">X (Twitter)</a>
+                <a href="https://twitter.com">X (Twitter)</a>
               </button>
               <button class="submenu-option">
-                <a href="https://www.youtube.com" alt="Youtube">Youtube</a>
+                <a href="https://www.youtube.com">Youtube</a>
               </button>
               <button class="submenu-option">
-                <a href="./index.html" alt="More Bananas">Bananas</a>
+                <a href="./index.html">Bananas</a>
               </button>
             </div>
           </div>
@@ -86,14 +90,14 @@
           </ul>
         </nav>
       </header>
-    <main>
+  <main>
         
     <section class="aboutsection">
       <div class="about-hero" id="aboutus">
         <h1>About us</h1>
         <p>Possibly, nearly, almost the best banana merchants around!</p>
-      
-    </div class="background-container">
+      </div>
+    </div>
 
 <!--ABOUT Blurb and Image -->
 
@@ -118,26 +122,26 @@
         </div>
     
     
-      <figure class="aboutimgfig">
-        <img
+        <figure class="aboutimgfig">
+          <img
           class="aboutimg-img"
           src="./images/banana_market.jpg"
           alt="Picture of a Banana Market"
-        />
-        <figcaption class="about-figcap">
-          Photo by
-          <a
+            />
+          <figcaption class="about-figcap">
+            Photo by
+            <a
             href="https://unsplash.com/@diegocatto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
             >Diego Catto</a
-          >
-          on
-          <a
+            >
+            on
+            <a
             href="https://unsplash.com/photos/variety-fruits-sw9V-jBBurQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
             >Unsplash</a
-          >
-        </figcaption>
-      </figure>
-    </div>
+            >
+          </figcaption>
+        </figure>
+      </div>
     </section>
 
 <!--CONTACT embedded map and address -->
@@ -222,7 +226,7 @@
       <div class="footer-right-container">
         <nav class="footer-nav-legal">
 <!-- line below hidden in desktop -->
-          <span id="legal-button">Legal<img src="./images/sort-down-30.png"/></span>
+          <span id="legal-button">Legal<img src="./images/sort-down-30.png" alt="sort down"/></span>
           <ul>
 <!-- line below hidden in mobile -->
             <li><span>Legal</span></li>
@@ -279,6 +283,5 @@
       </div>
       </div>
     </footer>
-    </div>
   </body>
 </html>
