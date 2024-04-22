@@ -35,7 +35,6 @@
 .tab {
     padding: 5px 10px;
     width: 30rem;
-    margin: 1rem;
     cursor: pointer;
     font-size: var(--desktop-h3-size);
     font-weight: var(--desktop-h3-weight);

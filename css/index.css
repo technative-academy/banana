@@ -198,6 +198,7 @@
     width: 80%;
 }
 
-.signoff > p {
+.signoff > a {
     font-size: smaller;
+    color: black;
 }
