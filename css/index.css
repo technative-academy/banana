@@ -1,5 +1,6 @@
 .credit {
     text-align: center;
+    font-size: smaller;
 }
 
 /* Hero */
@@ -110,7 +111,7 @@
     max-height: auto;
 }
 
-/* Sign Up COmpartment */
+/* Sign Up Compartment */
 .signup {
     background-color: var(--tint);
     padding: 50px;
@@ -155,6 +156,16 @@
     background-color: var(--primary);
     border: 1px;
     margin: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+    .signup-container {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 /* Testimonies compartment */
