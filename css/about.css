@@ -57,6 +57,10 @@
     }
 }
 
+.aboutsection h1 {
+    margin-top: 2.6rem;
+}
+
 .aboutimg-img {
     border-radius: 10%;
     max-width: 100%;
