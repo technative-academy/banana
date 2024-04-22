@@ -1,77 +1,77 @@
 /*Add margins to make testimonials box have white space left/right*/
-.testimonies{
+.testimonies {
     margin-left: 10%;
     margin-right: 10%;
 }
 
-
 /*adding nice spacing to main quote */
-.quote{
+.quote {
     padding-top: 3rem;
     padding-bottom: 3rem;
     color: url(--text-body);
-    font-size:url(--desktop-h3-size);
+    font-size: url(--desktop-h3-size);
     font-style: italic;
+    height: 100px;
 }
 
 /*make person tabs into a single row */
 .testimonies-container {
     flex-wrap: nowrap;
-    width:100%;
+    width: 100%;
 }
 
 /* Allow to shrink and be equally sized and spaced */
 .testimonies-person {
     flex-shrink: inherit;
     word-break: keep-all;
-    width:30%;
-    height:90%;
+    width: 30%;
+    height: 90%;
 }
 
 /* Ensure that grey highlight is same size for all regardless of text amount */
-.testimonies-person-description{
-    height:180px;
+.testimonies-person-description {
+    height: 180px;
 }
 
 /* text color*/
-.testimonies-person p{
-    color:url(--text-body);
+.testimonies-person p {
+    color: url(--text-body);
 }
 /*Allow to shrink and be equally sized and spaced */
 .selected {
     flex-shrink: inherit;
     word-break: keep-all;
-    width:30%;
-    height:90%;
+    width: 30%;
+    height: 90%;
 }
 
 /*Ensure uniformity of each img*/
-.testimonies-person img{
+.testimonies-person img {
     height: 70px;
-    width:70px;
+    width: 70px;
     margin-right: 5%;
 }
 /*media query */
 @media (max-width: 768px) {
-
     /* on small screens, text wraps underneath img*/
     .testimonies-person {
         flex-wrap: wrap;
     }
     /*shrink with the parent container*/
-    .testimonies-container img{
+    .testimonies-container img {
         flex-shrink: inherit;
     }
 
-    .testimonies-container{
+    .testimonies-container {
         flex-shrink: inherit;
     }
     /* on small screens, grey "selected" tint enlarged to encompass taller column of text*/
-    .testimonies-person-description{
-        height:250px;
+    .testimonies-person-description {
+        height: 250px;
     }
     /*shrink quote font-size on mobile*/
-    .quote{
+    .quote {
         font-size: url(--mobile-h3-size);
     }
+    
 }
