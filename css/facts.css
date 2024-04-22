@@ -1,0 +1,24 @@
+.facts {
+    margin-top: 5rem;
+}
+.facts-container {
+    gap: 0.3rem;
+}
+
+.fact {
+    margin: 1rem auto;
+}
+
+.facts h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+.facts-container p {
+    margin-top: 0.2rem;
+    padding: 0 1rem;
+}
+
+.fact-img {
+    min-width: 15%;
+}
