@@ -94,6 +94,8 @@
     /* (Social media submenu button - default display is none unless clicked to expand*/
     .submenu-toggle {
         padding-left: 20px;
+        font-weight: normal;
+        padding: 0rem 0.5rem 0rem 0rem;
         transition: all 0.5s ease;
     }
 
@@ -101,11 +103,20 @@
         padding-right: 3rem;
         display: none;
         flex-direction: column;
-        transition: all 1s ease;
+        transition: all 0.5s ease;
         z-index: 1;
     }
 
     /*link behaviours within the menu */
+
+    .menu-option a:link,
+    .submenu-toggle a:link,
+    .submenu-option a:link {
+        /*background-color: #444;*/
+        color: #f6f3fc;
+        padding: 0rem 0.5rem 0rem 0rem;
+        font-weight: normal;
+    }
 
     .menu-option a:visited,
     .submenu-toggle a:visited,
