@@ -100,14 +100,14 @@ header {
     .header-nav li a {
         text-decoration: none;
         font-size: 1.1rem;
-        font-weight: bolder;
+        font-weight: 300;
     }
 
     header a:link,
     footer a:visited {
         text-decoration: none;
         color: var(--text-heading);
-        font-weight: lighter;
+        font-weight: 400;
     }
 
     header a:hover {
@@ -207,9 +207,9 @@ header {
 body {
     margin: 0;
     padding: 0;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
 
-  overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 /* Styles for screens with a minimum width of 768 pixels i.e. Large Tablet - Desktop*/
